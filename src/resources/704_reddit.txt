@@ -1,0 +1,95 @@
+A new patch has been dispatched for the main client. More info will be edited in as I analyze the patch.
+
+---
+
+**Analysis Status:** Done
+
+---
+
+###7.04
+
+**Items**
+
+* Hurricane Pike recipe increased from 250 to 500
+* Silver Edge recipe increased from 300 to 500
+* Ghost Scepter cooldown reduced from 25 to 20
+* Sange and Yasha proc chance increased from 35% to 40%
+* Heaven's Halberd cooldown reduced from 22 to 18
+* Slippers of Agility are no longer available in the Side Shop
+
+**Heroes**
+
+* Centaur: Stampede Scepter damage reduction reduced from 50% to 40%
+* Monkey King: Primal Spring slow rescaled from 40/50/60/70% to 30/45/60/75%
+* Monkey King: Spring winding up sound effect can be heard by nearby enemies
+* Magnus: Base attack time increased from 1.7 to 1.8
+* Magnus: Reverse Polarity cooldown increased from 120/110/100 to 120
+* Abaddon: Strength gain reduced from 2.7 to 2.5
+* Abaddon: Mist Coil projectile speed reduced from 2000 to 1600
+* Lifestealer: Base damage reduced by 2
+* Keeper of the Light: Base damage reduced from 43-57 to 43-50
+* Brewmaster: Drunken Brawler cooldown reduced from 16/14/12/10 to 13/12/11/10
+* Nature's Prophet: Level 10 Talent increased from +225 Health to +250
+* Nature's Prophet: Level 15 Talent changed from +35 Movement Speed to +4 Treants Summoned
+* Razor: Level 20 Talent increased from +30 Attack Speed to +40
+* Razor: Level 20 Talent increased from +275 Health to +325
+* Death Prophet: Level 10 Talent increased from +10% Magic Resistance to +12%
+* Death Prophet: Exorcism spirit damage increased from 55 to 58
+* Queen of Pain: Shadow Strike cast point reduced from 0.452 to 0.4
+* Phoenix: Level 15 Talent increased from +120 Gold/Min to 150
+* Phoenix: Level 15 Talent increased from +50 Fire Spirits DPS to +65
+* Kunkka: Level 10 Talent increased from +25 Damage to +30
+* Kunkka: Level 15 Talent increased from +20 Movement Speed to +30
+* Lycan: Base strength increased by 3
+* Arc Warden: Strength gain increased from 2.3 to 2.7
+* Lone Druid: Level 15 Talent increased from +30 Spirit Bear Damage to +50
+* Ancient Apparition: Cold Feet manacost reduced from 150 to 125
+* Broodmother: Insatiable Hunger lifesteal increased from 60/90/120% to 60/100/140%
+* Broodmother: Insatiable Hunger damage increased from 60/90/120 to 60/100/140
+* Bristleback: Quill Spray AoE increased from 625 to 650
+* Puck: Base damage increased by 3
+* Lich: Chain Frost cooldown reduced from 120/90/60 to 100/80/60
+
+---
+
+###Economy Updates
+
+**Other**
+
+- Added the alternative style to the Staff of the Foreteller's Oath (Witch Doctor staff from the DAC 2017 chest).
+
+---
+
+###Winter 2017 Battle Pass
+
+**Player Cards**
+
+Updated player images for the following.
+
+- Jabz
+- No[o]ne
+- Solo
+- Kuku
+- xy-
+- Demon
+- NutZ
+- 9pasha
+
+---
+
+###UI Updates
+
+**Other**
+
+- 7.04 notification has been added to the Notification Dropdown and the Frontpage panel.
+- Gameplay version has been updated to 7.04
+
+---
+
+###Related Links
+
+- Changelog: None yet.
+
+---
+
+**Patch Size:** 123.5 MB (with Tools)

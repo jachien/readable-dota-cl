@@ -1,0 +1,554 @@
+7.02
+====
+
+
+General Changes:
+--
+* Shrines are now vulnerable after a T3 tower dies (same as the Shrines inside the base), rather than after all T2 towers die
+* Sentry Wards now come in packs of 1 for 100 gold (instead of 2 for 200)
+* Added Lycan to CM
+
+* Satyr Trickster Purge slow from 100/80/60/40/20% over 5 seconds to 50/40/30/20/10%
+* Helm of the Dominator All Stats from 6 to 4
+* Helm of the Dominator creeps now give a constant 125 gold bounty
+* Shadow Walk damage for Silver Edge from 225 to 200
+* Tome of Knowledge additional XP per used Tome from 100 to 135
+* Blademail damage return no longer spell lifesteals off of returned damage
+* Dragon Lance agility from 14 to 13
+* Battle Fury Radius from 280 to 300
+* Battle Fury Distance from 520 to 570
+* Bloodthorn cooldown from 11 to 13
+* Solar Crest Armor from 10 to 12 (same for transferring to Ally/Enemy)
+* Sange maim chance from 24% to 30%
+* Sange and Yasha Greater Maim chance from 30% to 35%
+* Heaven's Halberd maim chance from 24% to 35%
+* Heaven's Halberd cooldown from 30 to 22
+* Regen Rune now has the same damage dispel rules as Healing Salve
+* Aegis expiration regen now has the same damage dispel rules as Healing Salve
+
+* Observer Wards now have a Fog of War simulator to show you the area the ward will reveal (taking into account trees and terrain height)
+
+* Towers no longer attack neutral team units
+* The following abilities cause neutrals to temporarily not draw aggro: Meat Hook, Telekinesis and Toss
+
+* Added more trees for TP cover around the dire towers
+* Swapped the dire secondary jungle ancients and medium camp spots (and improved spawn boxes/stackability)
+* The Dire ward spot to the left of the Ancients no longer gives vision over the rune area infront of Roshan
+* Slightly adjusted the dire secondary jungle bounty rune further back
+* Reduced spawnbox size for both Dire hard camps
+* Shifted down the spawnbox for the ancient camp (formerly medium camp) in the Dire secondary jungle (so a high ground ward does not block the camp)
+* Fixed a rare case where Dire ancients could be stuck between trees when spawning
+
+
+
+Hero Changes:
+--
+Abaddon:
+* Level 10 Talent from +15% XP Gain to +20%
+
+Alchemist:
+* Level 15 Talent from +15 Movement Speed to +80 Unstable Concoction Damage
+* Level 25 Talent from -4 Acid Spray Armor to -5
+
+Ancient Apparition:
+* Level 15 Talent from +25 Health Regen to +30
+* Level 15 Talent from +15 Intelligence to -1s Ice Vortex Cooldown
+* Level 20 Talent from -30s Respawn Time to -35s
+
+Antimage:
+* Level 10 Talent from +6 Strength to +150 Health
+* Level 15 Talent from +250 Health to -1s Blink Cooldown
+* Level 25 Talent from -2s Blink Cooldown to -50s Mana Void Cooldown
+
+Arc Warden:
+* Level 10 Talent from +125 Health to +20 Flux DPS
+* Level 15 Talent from +8 Strength to +200 Health
+
+Axe:
+* Level 20 Talent from +30 Movement Speed to +35
+
+Bane:
+* Level 20 Talent from +35 Movement Speed to +75 Enfeeble Damage Reduction
+* Level 25 Talent from +120 Enfeeble Damage Reduction to +75 Movement Speed
+
+Batrider:
+* Level 15 Talent from +175 Health to +200
+
+Beastmaster:
+* Level 10 Talent from +15% XP Gain to +20%
+* Level 15 Talent from -30s Respawn Time to -35s
+* Level 20 Talent from +300 Health to +350
+* Level 25 Talent from +175 Wild Axes Damage to +250
+
+Bloodseeker
+* Level 10 Talent from +5 Armor to +200 Health
+* Level 15 Talent from +250 Health to +75 Blood Rite Damage
+* Level 20 Talent from -30s Respawn Time to +14% Rupture Damage
+
+Bounty Hunter:
+* Scepter now also increases Shuriken Toss ministun duration from 0.1 to 0.75
+* Level 10 Talent from +15% XP Gain to +20%
+* Level 20 Talent from +100 Damage to +120 Damage
+* Level 20 Talent from 8% Spell Amplification to +75 Shuriken Toss Damage
+* Level 25 Talent from +20% Evasion to +25%
+
+Brewmaster:
+* Fire Spirit now has phasing movement
+* Level 10 Talent from +25 Attack Speed to +30
+* Level 15 Talent from +20 Movement Speed to +75 Thunder Clap Damage
+* Level 20 Talent from -25s Respawn Time to -35s
+* Level 25 Talent from 14 Primal Split Unit Armor to +20
+
+Bristleback:
+* Quill Spray Max damage from 450 to 550
+* Viscous Nasal Goo Scepter range from 700 to 750
+* Level 15 Talent from +20 Movement Speed to +4 Max Goo Stacks
+* Level 20 Talent from -30s Respawn Time to -35s
+* Level 25 Talent from +4 Max Goo Stacks to +20 Quill Stack Damage
+
+Broodmother:
+* Level 10 Talent from +15% XP Gain to +25%
+* Level 10 Talent from +10 Agility to +60 Spawn Spiderling Damage
+* Level 15 Talent from +7 Armor to +250 Health
+* Level 20 Talent from +300 Health to +8 Spiders Attack Damage
+
+Centaur:
+* Level 10 Talent from +30 Damage to +35
+
+Chaos Knight:
+* Level 10 Talent from +7 Intelligence to +8
+* Level 15 Talent from +15 Movement Speed to +20
+
+Chen:
+* Level 10 Talent from +15 Movement Speed to +25
+* Level 15 Talent from +25% Spell Amplification to -10s Test of Faith Cooldown
+* Level 15 Talent from +200 Health to +250
+
+Clinkz:
+* Level 15 Talent from +12 Strength to +15
+
+Clockwerk:
+* Level 15 Talent from +40 Damage to +50
+* Level 15 Talent from +15 Movement Speed to +75 Rocket Flare Damage
+
+Crystal Maiden:
+* Level 10 Talent from +50 Damage to +60
+* Level 15 Talent from +200 Health to +250
+* Level 25 Talent from +200 Crystal Nova Damage to +250
+
+Dark Seer:
+* Movement speed reduced from 300 to 295
+* Ion Shell manacost from 70/90/110/130 to 100/110/120/130
+* Level 15 Talent from +90 Damage to +120
+* Level 20 Talent from +25 Intelligence to +75 Vacuum AoE
+* Level 20 Talent from +12 Strength to +10% Cooldown Reduction
+* Level 25 Talent from +12% Cooldown Reduction to +25 Strength
+* Level 25 Talent from +70 Ion Shell Damage to +80
+
+Dazzle:
+* Level 15 Talent from +40 Damage to +60
+
+Death Prophet:
+* Level 10 Talent from +7 Strength to +8% Magic Resistance
+* Level 15 Talent from +8% Magic Resistance to -1s Crypt Swarm Cooldown
+* Level 15 Talent from +75 Cast Range to +100
+
+Disruptor:
+* Level 15 Talent from +200 Health to -3s Kinetic Field Cooldown
+* Level 20 Talent from 15% Cooldown Reduction to +400 Health
+
+Doom:
+* Level 10 Talent from +8 Intelligence to +80 Devour Bonus Gold
+* Level 10 Talent from +150 Health to +250
+* Level 15 Talent from +6 Armor to +15 Scorched Earth Damage/Heal
+* Level 15 Talent from +15 Movement Speed to +20
+* Level 20 Talent from +65 Damage to +35 Doom DPS
+
+Dragon Knight:
+* Level 10 Talent from +6 Strength to 7
+* Level 15 Talent from +25% XP Gain to +35%
+* Level 25 Talent from +50 Movement Speed to +60
+
+Drow:
+* Level 25 Talent from +350 Gust Distance/Knockback to +400
+
+Earth Spirit:
+* Level 25 Talent from -35s Respawn Time to -45s
+
+Earthshaker:
+* Base HP regen from 0.25 to 0.75
+* Level 20 Talent from +10% Spell Amplification to +40 Echo Damage
+* Level 25 Talent from +500 Health to +600 Health
+
+Elder Titan:
+* Natural Order AoE from 325 to 350
+* Level 15 Talent from +25% XP Gain to +30 Echo Stomp Damage
+* Level 25 Talent from +80 Astral Spirit Hero Attack to +100
+
+Ember Spirit:
+* Root now disables Activate Fire Remnant
+* Level 10 Talent from 15% Spell Amplification to 12%
+
+Enchantress:
+* Level 10 Talent from +5 All Stats to +6
+* Level 10 Talent from +20 Movement Speed to +25
+* Level 15 Talent from +40 Damage to +50
+* Level 15 Talent from +8s Nature's Attendants Duration to +10
+* Level 20 Talent from -30s Respawn Time to +60 Untouchable Slow
+* Level 25 Talent from +25 Intelligence to -50 Respawn Time
+* Level 25 Talent from +10 Nature's Attendants Wisps to +12
+
+Enigma:
+* Level 20 Talent from -30s Respawn Time to -40s
+
+Faceless Void:
+* Level 10 Talent from +5 Strength to +7
+
+Gyrocopter
+* Level 10 Talent from +150 Health to +200
+* Level 15 Talent from +10% Magic Resistance to +12%
+* Level 20 Talent from +25 Movement Speed to +35
+
+Huskar:
+* Level 10 Talent from +15 Movement Speed to +5 Burning Spears DPS
+* Level 10 Talent from +150 Health to +175
+
+Invoker:
+* Level 15 Talent from +25% XP Gain to +30%
+* Level 25 Talent from -15s Tornado Cooldown to -18s
+
+Io:
+* Level 25 Talent from -40s Respawn Time to -50s
+
+Jakiro:
+* Level 10 Talent from +15% XP Gain to +20%
+* Level 15 Talent from +250 Health to +25 Dual Breath Burn Damage
+
+Juggernaut:
+* Healing Ward now has a 25 gold bounty
+* Level 10 Talent from +150 Health to +175 Health
+* Level 15 Talent from +6 Armor to 7
+
+Keeper of the Light:
+* Level 10 Talent from +6 Strength to +7
+* Level 25 Talent from +300 Cast Range to +400
+
+Kunkka:
+* Tidebringer Cleave Distance from 675/750/825/900 to 650/800/950/1100
+* Tidebringer Cleave Radius from 450/500/550/600 to 500/550/600/650
+* Level 10 Talent from +150 Mana to +40 Torrent Damage
+* Level 10 Talent from +20 Damage to +25
+* Level 25 Talent from +25% Magic Resistance to +35%
+
+Legion Commander:
+* Level 10 Talent from +15% XP Gain to +20%
+
+Leshrac:
+* Level 15 Talent from +8% Magic Resistance to +10%
+* Level 20 Talent from +12 Strength to +15
+
+Lich:
+* Level 15 Talent from +100 Cast Range to +125
+* Level 15 Talent from +5 All Stats to -3s Frost Blast Cooldown
+* Level 25 Talent from +25 Frost Armor Structure Armor to +35
+
+Lifestealer:
+* Level 15 Talent from +200 Health to +250
+
+Lina:
+* Level 10 Talent from +20 Damage to -25s Respawn Time
+* Level 10 Talent from +250 Mana to +60 Light Strike Array Damage
+* Level 15 Talent from -30s Respawn Time to +40 Damage
+
+Lion:
+* Level 10 Talent from 175 Health to -25s Respawn Time
+* Level 15 Talent from -30s Respawn Time to +80 Earth Spike Damage
+
+Lone Druid:
+* Level 10 Talent from +200 Attack Range to +175
+* Level 15 Talent from +65 Damage to +55
+* Level 20 Talent from +7 Spirit Bear Armor to +12
+* Level 20 Talent from -50s Respawn Time to -40s
+
+Luna:
+* Base attack damage reduced by 6
+* Lunar Blessing Night Vision bonus from 1000 to 250/500/750/1000
+* Level 10 Talent from +4 Armor to +15 Movement Speed
+
+Lycan:
+* Added to CM
+* Agility gain from 1.5 to 1.0
+* Howl manacost from 30 to 40
+* Level 15 Talent from -20s Respawn Time to -25s
+
+Magnus:
+* Level 15 Talent from +50 Damage to +12 Strength
+* Level 20 Talent from +15 Strength to +15% Empower Damage/Cleave
+* Level 20 Talent from +20 Movement to +40
+
+Medusa:
+* Level 10 Talent from +10 Intelligence to +12
+* Level 15 Talent from 10% Evasion to 15%
+* Level 20 Talent from +15 Agility to +1 Split Shot target
+* Level 20 Talent from +500 Mana to +600
+
+Meepo:
+* Base armor reduced by 2
+* Level 15 Talent from +20 Movement Speed to +25
+
+Mirana:
+* Level 20 Talent from +8 Armor to -4s Sacred Arrow cooldown
+* Level 20 Talent from +40 Damage to +50 Damage
+
+Monkey King:
+* Base armor reduced by 3
+* Jingu Mastery bonus damage from 80/120/160/200 to 75/100/125/150
+* Jingu Mastery lifesteal from 20/30/40/50% to 15/30/45/60%
+* Wukong's Command no longer continues while reincarnating
+* Level 15 Talent from +20 Movement Speed to +75 Jingu Mastery Damage
+* Level 20 Talent from +15 Strength to 20% Magic Resistance
+* Level 25 Talent from +25% Magic Resistance to +25 Strength
+
+Morphling:
+* Level 25 Talent from +30% Replicate Damage to +50%
+
+Naga Siren:
+* Level 15 Talent from 15% Evasion to -3s Ensnare Cooldown
+
+Nature's Prophet:
+* Level 10 Talent from +20 Damage to +30
+* Level 10 Talent from +175 Health to +225 Health
+* Level 20 Talent from +8 Armor to +10
+
+Necrophos:
+* Agility gain from 1.7 to 1.2
+* Movement speed from 290 to 285
+* Level 15 Talent from +15 Movement Speed to +20
+
+Night Stalker:
+* Level 25 Talent from -6s Crippling Fear Cooldown to -8s
+
+Nyx Assassin:
+* Level 15 Talent from +10 Strength to +50 Impale Damage
+* Level 15 Talent from +25 Agility to +12% Magic Resistance
+* Level 20 Talent from +15% Magic Resistance to +40 Agility
+
+Ogre Magi:
+* Intelligence growth from 2.4 to 2.0
+* Level 15 Talent from +40 Damage to +50
+
+Omniknight:
+* Level 10 Talent from +15% XP Gain to +20%
+
+Oracle:
+* Level 10 Talent from +15% XP Gain to +20%
+
+Outworld Devourer:
+* Level 20 Talent from +250 Health to +275 Health
+
+Phantom Assassin:
+* Level 15 Talent from +15 Movement Speed to +20
+
+Phantom Lancer:
+* Level 10 Talent from +150 Health to +75 Spirit Lance Damage
+
+Phoenix:
+* Level 15 Talent from +12 Strength to +50 Fire Spirits DPS
+
+Puck:
+* Level 10 Talent from +150 Health to +175
+* Level 15 Talent from +20 Movement Speed to +15% Magic Resistance
+* Level 20 Talent from +20% Magic Resistance to -3s Waning Rift Cooldown
+* Level 20 Talent from +8% Spell Amplification to +10%
+
+Pudge:
+* Movement Speed reduced from 285 to 280
+* Fixed Meat Hook sometimes landing the target behind your hero (requiring you to sometimes turn to dismember)
+* Level 20 Talent from -35s Respawn Time to -40s
+
+Pugna:
+* Level 15 Talent from +10 Strength to +12
+* Level 20 Talent from +10 All Stats to +0.5 Netherward Damage Per Mana
+* Level 20 Talent from +100 Cast Range to +150
+* Level 25 Talent from +100 Nether Blast Damage to +125
+
+Queen of Pain:
+* Level 10 Talent from +5 Strength to +6
+* Level 25 Talent from +35 Intelligence to -3s Shadow Strike Cooldown
+
+Razor:
+* Level 15 Talent from +5 Armor to +130 Unstable Current Damage
+* Level 20 Talent from +250 Health to +275
+
+Riki:
+* Level 15 Talent from +20% XP Gain to +30%
+
+Rubick:
+* Level 10 Talent from +50 Damage to +60
+
+Sand King:
+* Level 10 Talent from +200 Mana to +10% Magic Resistance
+* Level 15 Talent from +12% Magic Resistance to +50 Sand Storm DPS
+* Level 15 Talent from +15 Movement Speed to -30s Respawn Time
+
+Shadow Demon:
+* Disruption illusion damage taken from 200% to 300%
+* Level 25 Talent from -1s Shadow Poison Cooldown to -6s Soul Catcher Cooldown
+
+Shadow Fiend:
+* Level 20 Talent from 15% Evasion to 15% Lifesteal
+
+Shadow Shaman:
+* Level 15 Talent from +20% XP Gain to 30%
+
+Silencer:
+* Level 25 Talent from +20% Curse Slow to +25%
+
+Skywrath Mage:
+* Level 15 Talent from +50 Damage to +75
+* Level 15 Talent from +60 Gold/Min to +90
+
+Slardar:
+* Slithereen Crush stun duration from 1.6/1.9/2.2/2.5 to 1.5/1.75/2/2.25
+* Level 15 Talent from +200 Health to +225
+
+Slark:
+* Movement speed reduced from 305 to 300
+* Level 15 Talent from +10 Strength to +15
+* Level 20 Talent from +250 Health to +10% Cooldown Reduction
+
+Sniper:
+* Level 10 Talent from +4 Mana Regen to +5
+
+Spectre:
+* Level 20 Talent from +12 Strength to +15
+
+Spirit Breaker:
+* Level 10 Talent from +15 Movement Speed to +20
+
+Storm Spirit:
+* Level 15 Talent from +175 Health to +200
+* Level 20 Talent from +7 Armor to +8
+
+Sven:
+* Level 25 Talent from -5s Storm Hammer Cooldown to -6s
+
+Techies :
+* Proximity Mines bounty increased from 30 to 50
+* Level 15 Talent from +25% XP Gain to +30%
+* Level 25 Talent from +25% Cooldown Reduction to +20%
+
+Templar Assassin:
+* Level 10 Talent from +15 Movement Speed to +20
+* Level 20 Talent from +250 Health to +275
+
+Terrorblade:
+* Level 15 Talent from +175 Health to +200
+* Level 20 Talent from +15 Movement Speed to +25
+
+Tidehunter:
+* Level 15 Talent from +30% XP Gain to +35%
+* Level 25 Talent from -5 Gush Armor to -6
+
+Timbersaw:
+* Level 10 Talent from +10% XP Gain to +20%
+* Level 15 Talent from +15 Intelligence to +20
+* Level 20 Talent from +125 Cast Range to +150
+
+Tinker:
+* Level 10 Talent from +5 Armor to +6
+* Level 15 Talent from +200 Health to +225 Health
+
+Tiny:
+* Level 10 Talent from +10 Intelligence to +12
+* Level 15 Talent from +15 Movement Speed to +20
+
+Treant Protector
+* Leech Seed slow from 28% to 22/24/26/28%
+* Nature's Guise Bash duration from 0.7/1.2/1.7/2.2 to 0.4/1.0/1.6/2.2
+* Nature's Guise movement bonus from 16/22/28/34% to 10/18/26/34%
+* Level 20 Talent from +65 Damage to +90
+
+Troll Warlord:
+* Level 10 Talent from +6 Strength to +7
+* Level 20 Talent from +300 Health to +350
+
+Tusk:
+* Level 10 Talent from +20% XP Gain to +35%
+* Level 10 Talent from +30 Damage to +35
+* Level 15 Talent from +15 Strength to +150 Snowball Damage
+* Level 20 Talent from +10% Magic Resistance to +12%
+* Level 25 Talent from +500 Health to +700
+
+Underlord:
+* Movement speed reduced from 305 to 290
+* Atrophy Aura Damage Reduction from 10/20/30/40% to 4/16/28/40%
+* Level 15 Talent from +200 Health to +35 Movement Speed
+* Level 20 Talent from +100 Cast Range to +125
+* Level 20 Talent from +50 Attack Speed to +60
+
+Undying:
+* Level 15 Talent from +30% XP Gain to +35%
+* Level 20 Talent from +20 Movement Speed to +25
+* Level 20 Talent from +10 All Stats to +50 Tombstone Zombie Damage
+* Level 25 Talent from +40 Tombstone Zombie Damage to -2s Decay Cooldown
+* Level 25 Talent from +12 Armor to +15
+
+Ursa:
+* Level 10 Talent from +8% Magic Resistance to +10%
+
+Vengeful Spirit:
+* Level 20 Talent from +20 Movement Speed to +35
+* Level 20 Talent from +50 Damage to +65
+
+Venomancer:
+* Level 15 Talent from +175 Health to +200
+
+Viper:
+* Level 10 Talent from +125 Health to +150
+
+Visage:
+* Level 10 Talent from +15% XP Gain to +25%
+* Level 10 Talent from +60 Gold/Min to +90
+* Level 20 Talent from -30s Respawn Time to -40s
+* Level 20 Talent from +250 Health to +300
+
+Warlock:
+* Level 10 Talent from +15% XP Gain to +20%
+* Level 15 Talent from +20 Movement Speed to -4s Shadow Word Cooldown
+* Level 15 Talent from +125 Cast Range to +150
+
+Weaver:
+* Base damage reduced by 2
+* The Swarm damage from 20 to 14/16/18/20
+* Level 25 Talent from +20% Magic Resistance to +25%
+
+Windranger:
+* Powershot damage from 120/220/320/420 to 180/260/340/420
+* Powershot cooldown from 9 to 12/11/10/9
+* Windrun slow AoE from 300 to 325
+* Windrun manacost from 100 to 75
+* Level 10 Talent from +15 Damage to +25% Windrun Slow
+* Level 15 Talent from +16 Intelligence to +20 Intelligence
+* Level 15 Talent from +200 Health to +40 Movement Speed
+* Level 20 Talent from +12% Magic Resistance to +20%
+* Level 20 Talent from +12% Spell Amplification to +15%
+* Level 25 Talent from -5s Powershot Cooldown to -6s
+
+Winter Wyvern:
+* Level 10 Talent from +5 Strength to +6
+
+Witch Doctor:
+* Level 10 Talent from +20% XP Gain to +25%
+* Level 15 Talent from +75 Damage to +90
+* Level 15 Talent from -35s Respawn Time to -40s
+
+Wraith King:
+* Level 10 Talent from +8 Intelligence to +10
+* Level 15 Talent from +200 Health to +50 Wraithfire Blast DPS
+
+Zeus:
+* Scepter strike interval from 2.5 to 2.25
+* Scepter cooldown from 50 to 40 seconds
+* Scepter duration from 50 to 40 seconds
+* Level 10 Talent from +150 Health to +175
