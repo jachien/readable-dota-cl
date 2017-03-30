@@ -9,12 +9,14 @@ public class ChangeList {
     private Integer entityId;
     private String name;
     private String localizedName;
+    private String[] alternateNames;
     private List<String> changes;
 
-    public ChangeList(Integer entityId, String name, String localizedName, List<String> changes) {
+    public ChangeList(Integer entityId, String name, String localizedName, String[] alternateNames, List<String> changes) {
         this.entityId = entityId;
         this.name = name;
         this.localizedName = localizedName;
+        this.alternateNames = alternateNames;
         this.changes = changes;
     }
 
@@ -40,6 +42,14 @@ public class ChangeList {
 
     public String getLocalizedName() {
         return localizedName;
+    }
+
+    public boolean hasAlternateNames() {
+        return alternateNames != null && alternateNames.length > 0;
+    }
+
+    public String[] getAlternateNames() {
+        return alternateNames;
     }
 
     public List<String> getChanges() {

@@ -1,6 +1,7 @@
 package org.jchien.peadockle;
 
 import freemarker.template.TemplateException;
+import org.jchien.peadockle.format.DefaultChangeListFormatter;
 import org.jchien.peadockle.htmlgen.ChangelogGenerator;
 import org.jchien.peadockle.model.Changelog;
 import org.jchien.peadockle.parse.ChangelogParser;
@@ -26,7 +27,7 @@ public class Driver {
         };
 
         for (String patch : patches) {
-            Changelog changelog = clp.generateChangelog("src/resources/" + patch + "_valve.txt");
+            Changelog changelog = clp.generateChangelog("src/resources/" + patch + "_valve.txt", new DefaultChangeListFormatter());
             gen.generateChangelogHtml(changelog, "E:\\jchien\\code\\readable-dota-cl\\changelog_" + patch + ".html");
         }
     }

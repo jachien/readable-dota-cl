@@ -1,5 +1,6 @@
 package org.jchien.peadockle.parse;
 
+import org.jchien.peadockle.format.ChangeListFormatter;
 import org.jchien.peadockle.model.ChangeList;
 import org.jchien.peadockle.model.Changelog;
 
@@ -19,6 +20,21 @@ public class ChangelogParser {
     public ChangelogParser(DotaDictionary heroDict, DotaDictionary itemDict) {
         this.heroDict = heroDict;
         this.itemDict = itemDict;
+    }
+
+    public Changelog generateChangelog(String patchPath, ChangeListFormatter fmt) throws IOException {
+        Changelog changelog = generateChangelog(patchPath);
+        List<ChangeList> gcl = buildFormattedChangeList(changelog.getGeneralChanges(), fmt);
+        List<ChangeList> icl = buildFormattedChangeList(changelog.getItemChanges(), fmt);
+        List<ChangeList> hcl = buildFormattedChangeList(changelog.getHeroChanges(), fmt);
+        return new Changelog(changelog.getPatchNumber(), gcl, icl, hcl);
+    }
+
+    private List<ChangeList> buildFormattedChangeList(List<ChangeList> changeLists, ChangeListFormatter fmt) {
+        return changeLists
+                .stream()
+                .map(cl -> fmt.format(cl))
+                .collect(Collectors.toList());
     }
 
     public Changelog generateChangelog(String patchPath) throws IOException {
@@ -56,6 +72,7 @@ public class ChangelogParser {
         System.out.println(itemChangeMap);
         System.out.println(heroChangeMap);
 
+        // todo actually parse the patch number
         return buildChangelog("7.xx", generalChanges, itemChangeMap, heroChangeMap);
     }
 
@@ -63,52 +80,42 @@ public class ChangelogParser {
                                      List<String> generalChanges,
                                      Map<Integer, List<String>> itemChangeMap,
                                      Map<Integer, List<String>> heroChangeMap) {
+
         List<ChangeList> gcl = new ArrayList<>();
-        gcl.add(new ChangeList(null, null, null, generalChanges));
+        gcl.add(new ChangeList(null, null, null, null, generalChanges));
 
-        Comparator<ChangeList> iclComparator = new Comparator<ChangeList>() {
+        List<ChangeList> icl = buildChangeList(itemChangeMap, itemDict);
+        List<ChangeList> hcl = buildChangeList(heroChangeMap, heroDict);
+
+        return new Changelog(patchNumber, gcl, icl, hcl);
+    }
+
+    private List<ChangeList> buildChangeList(Map<Integer, List<String>> changeMap, DotaDictionary dict) {
+        Comparator<ChangeList> comparator = new Comparator<ChangeList>() {
             @Override
             public int compare(ChangeList o1, ChangeList o2) {
-                String n1 = itemDict.getEntry(o1.getEntityId()).getLocalizedName();
-                String n2 = itemDict.getEntry(o2.getEntityId()).getLocalizedName();
+                String n1 = dict.getEntry(o1.getEntityId()).getLocalizedName();
+                String n2 = dict.getEntry(o2.getEntityId()).getLocalizedName();
                 return n1.compareTo(n2);
             }
         };
-        List<ChangeList> icl = itemChangeMap.entrySet()
-                .stream()
-                .map(e -> {
-                    Entry entry = itemDict.getEntry(e.getKey());
-                    return new ChangeList(
-                        entry.getId(),
-                        entry.getName(),
-                        entry.getLocalizedName(),
-                        e.getValue());
-                })
-                .sorted(iclComparator)
-                .collect(Collectors.toList());
 
-        Comparator<ChangeList> hclComparator = new Comparator<ChangeList>() {
-            @Override
-            public int compare(ChangeList o1, ChangeList o2) {
-                String n1 = heroDict.getEntry(o1.getEntityId()).getLocalizedName();
-                String n2 = heroDict.getEntry(o2.getEntityId()).getLocalizedName();
-                return n1.compareTo(n2);
-            }
-        };
-        List<ChangeList> hcl = heroChangeMap.entrySet()
+        List<ChangeList> cl = changeMap
+                .entrySet()
                 .stream()
                 .map(e -> {
-                    Entry entry = heroDict.getEntry(e.getKey());
+                    Entry entry = dict.getEntry(e.getKey());
                     return new ChangeList(
                             entry.getId(),
                             entry.getName(),
                             entry.getLocalizedName(),
+                            entry.getAlternateNames(),
                             e.getValue());
                 })
-                .sorted(hclComparator)
+                .sorted(comparator)
                 .collect(Collectors.toList());
 
-        return new Changelog(patchNumber, gcl, icl, hcl);
+        return cl;
     }
 
     private List<String> getOrCreateChangeList(Map<Integer, List<String>> map, int id) {
