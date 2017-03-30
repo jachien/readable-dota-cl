@@ -21,7 +21,7 @@ public class ChangelogParser {
         this.itemDict = itemDict;
     }
 
-    private Changelog generateChangelog(String patchPath) throws IOException {
+    public Changelog generateChangelog(String patchPath) throws IOException {
         List<String> generalChanges = new ArrayList<>();
         Map<Integer, List<String>> itemChangeMap = new HashMap<>();
         Map<Integer, List<String>> heroChangeMap = new HashMap<>();
