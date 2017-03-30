@@ -11,12 +11,20 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
+import java.util.function.Function;
+import java.util.stream.Collectors;
 
 /**
  * @author jchien
  */
 public class DotaDictionary {
     private static final Gson GSON =  new GsonBuilder().setFieldNamingPolicy(FieldNamingPolicy.LOWER_CASE_WITH_UNDERSCORES).create();
+
+    // todo check on item load that these ids haven't changed
+    // special case: for each Sange and Yasha identified, remove one Sange and one Yasha from matched terms
+    private static final int SANGE = 162;
+    private static final int YASHA = 170;
+    private static final int SANGE_AND_YASHA = 154;
 
     private String[] strings;
     private int[] ids;
@@ -28,12 +36,20 @@ public class DotaDictionary {
         this.map = map;
     }
 
+    public Entry getEntry(int id) {
+        Entry ret = map.get(id);
+        if (ret != null) {
+            return ret;
+        }
+        throw new NoSuchElementException("no dictionary entry for id: " + id);
+    }
+
     /**
      * @param line
      * @return
      */
-    private List<Integer> getTerms(String line) {
-        List<Integer> ret = Lists.newArrayList();
+    public Set<Integer> parseEntryIds(String line) {
+        List<Integer> ids = Lists.newArrayList();
 
         String fmtLine = format(line);
         int start = 0;
@@ -41,8 +57,8 @@ public class DotaDictionary {
             String substr = fmtLine.substring(start);
             int idx = Arrays.binarySearch(strings, substr);
             if (idx >= 0) {
-                int id = ids[idx];
-                ret.add(id);
+                int id = this.ids[idx];
+                ids.add(id);
             } else {
                 idx = getInsertionPoint(idx) - 1;
                 do {
@@ -50,8 +66,8 @@ public class DotaDictionary {
                         int end = start + strings[idx].length();
                         // string must end on a word boundary to avoid matching cases like "Io" in "Ion shell"
                         if (end >= fmtLine.length() || Character.isWhitespace(fmtLine.charAt(end))) {
-                            int id = ids[idx];
-                            ret.add(id);
+                            int id = this.ids[idx];
+                            ids.add(id);
                         }
                     }
                     idx--;
@@ -66,7 +82,7 @@ public class DotaDictionary {
             start = nextWhitespace + 1;
         }
 
-        return ret;
+        return dedupeSny(ids);
     }
 
     private int getInsertionPoint(int idx) {
@@ -90,18 +106,47 @@ public class DotaDictionary {
         return sb.toString();
     }
 
-    private static DotaDictionary load(String path) throws FileNotFoundException {
+    private Set<Integer> dedupeSny(List<Integer> ids) {
+        Set<Integer> ret = new LinkedHashSet<>(ids);
+
+        // my intellij is definitely too old, this is not a compile error
+        Map<Integer, Long> idCounts = ids.stream()
+                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+
+        long snyCnt = getCount(idCounts, SANGE_AND_YASHA);
+        long sangeCnt = getCount(idCounts, SANGE);
+        long yashaCnt = getCount(idCounts, YASHA);
+
+        if (snyCnt >= sangeCnt) {
+            ret.remove(SANGE);
+        }
+        if (snyCnt >= yashaCnt) {
+            ret.remove(YASHA);
+        }
+
+        return ret;
+    }
+
+    private long getCount(Map<Integer, Long> countMap, int key) {
+        Long ret = countMap.get(key);
+        if (ret == null) {
+            return 0;
+        }
+        return ret;
+    }
+
+    public static DotaDictionary load(String path) throws FileNotFoundException {
         Entry[] entries = GSON.fromJson(new FileReader(path), Entry[].class);
 
         Map<Integer, Entry> map = Maps.newHashMap();
         List<FormattedEntry> fmtEntries = Lists.newArrayListWithCapacity(entries.length);
         for (Entry entry : entries) {
-            map.put(entry.id, entry);
+            map.put(entry.getId(), entry);
 
-            fmtEntries.add(new FormattedEntry(entry.id, format(entry.localizedName)));
-            if (entry.alternateNames != null) {
-                for (String altName : entry.alternateNames) {
-                    fmtEntries.add(new FormattedEntry(entry.id, format(altName)));
+            fmtEntries.add(new FormattedEntry(entry.getId(), format(entry.getLocalizedName())));
+            if (entry.getAlternateNames() != null) {
+                for (String altName : entry.getAlternateNames()) {
+                    fmtEntries.add(new FormattedEntry(entry.getId(), format(altName)));
                 }
             }
         }
@@ -117,26 +162,6 @@ public class DotaDictionary {
         int[] ids = fmtEntries.stream().mapToInt(e -> e.id).toArray();
 
         return new DotaDictionary(strings, ids, map);
-    }
-
-    private static class Entry {
-        private int id;
-        private String name;
-        private String localizedName;
-        private String[] alternateNames;
-
-        private Entry() {
-        }
-
-        @Override
-        public String toString() {
-            return "Entry{" +
-                    "id=" + id +
-                    ", name='" + name + '\'' +
-                    ", localizedName='" + localizedName + '\'' +
-                    ", alternateNames=" + Arrays.toString(alternateNames) +
-                    '}';
-        }
     }
 
     private static class FormattedEntry {
@@ -160,8 +185,8 @@ public class DotaDictionary {
         try (BufferedReader in = new BufferedReader(new FileReader(patchFile))) {
             String line;
             while ((line = in.readLine()) != null) {
-                List<Integer> heroIds = heroDict.getTerms(line);
-                List<Integer> itemIds = itemDict.getTerms(line);
+                Collection<Integer> heroIds = heroDict.parseEntryIds(line);
+                Collection<Integer> itemIds = itemDict.parseEntryIds(line);
 
                 System.out.println(line);
 
