@@ -17,9 +17,17 @@ public class Driver {
         DotaDictionary itemDict = DotaDictionary.load("src/resources/items.json");
 
         ChangelogParser clp = new ChangelogParser(heroDict, itemDict);
-        Changelog changelog = clp.generateChangelog("src/resources/704_valve.txt");
-
         ChangelogGenerator gen = new ChangelogGenerator();
-        gen.generateChangelogHtml(changelog, "E:\\jchien\\code\\readable-dota-cl\\changelog.html");
+
+        String[] patches = {
+                "704",
+                "702",
+                "701",
+        };
+
+        for (String patch : patches) {
+            Changelog changelog = clp.generateChangelog("src/resources/" + patch + "_valve.txt");
+            gen.generateChangelogHtml(changelog, "E:\\jchien\\code\\readable-dota-cl\\changelog_" + patch + ".html");
+        }
     }
 }

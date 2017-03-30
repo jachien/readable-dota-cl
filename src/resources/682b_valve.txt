@@ -1,0 +1,109 @@
+Compendium
+- Compendium Reward Released: Daily Hero Challenge
+- Compendium Reward Released: Alternate Voice Vote
+- Compendium Reward Released: Model Update Vote
+- Added sound effects for Dragon Knight's Kindred of the Iron Dragon Immortal
+- Added sound effects for Death Prophet's Fluttering Mortis Immortal
+- Fixed Hellborn Grasp Upheaval visual effects not showing properly
+- Fixed Vici Gaming gem causing crashes
+
+
+
+
+6.81b Gameplay Changes:
+
+HEROES
+
+Ancient Apparition
+* Ice Vortex slow decreased from 18/22/26/30% to 15/20/25/30%
+
+Batrider
+* Sticky Napalm bonus damage is now halved against non-hero units
+
+Bounty Hunter
+* Shadow Walk duration increased from 15/20/25/30 to 20/25/30/35
+
+Doom
+* Devour manacost rescaled from 60/50/40/30 to 60
+
+Drow Ranger
+* Gust knockback duration increased from 0.5 to 0.6/0.7/0.8/0.9
+
+Earthshaker
+* Turn rate improved from 0.6 to 0.9
+* Echo Slam's Initial Damage, Echo Search, Echo Damage AOE increased from 525, 550, 500 to 575, 575, 575
+
+Elder Titan
+* Echo Stomp damage increased from 80/85/90/95 to 80/90/100/110
+
+Enigma
+* Midnight Pulse duration increased from 8 to 11
+
+Invoker
+* Forged Spirits 33% magic resistance removed
+* Cold Snap damage reworked from the initial and secondary proc damage of 60/30 to 7xQuasLevel per proc
+* Deafening Blast's Disarm is now dispelled when Magic Immunity is applied
+
+Juggernaut
+* Omnislash damage per slash rescaled from 175-250 to 200-225
+* Base Attack Time improved from 1.5 to 1.4
+
+Leshrac
+* Pulse Nova damage increased from 66/100/144 to 80/120/160 (Scepter from 100/150/200 to 100/160/220)
+
+Lina
+* Light Strike Array stun duration increased from 1.6 to 1.6/1.7/1.8/1.9
+
+Lycan
+* Howl duration decreased from 12 to 10
+* Howl bonus damage reduced from 20/30/40/50 to 14/26/38/50
+
+Mirana
+* Sacred Arrow minimum stun duration decreased from 0.5 to 0.01 (maximum duration is still 5 seconds growing linearly)
+* Sacred Arrow minimum damage reduced by 40 (maximum damage is still 190/280/370/460 growing linearly)
+
+Ogre Magi
+* Multicast's passive manacost penalty on Fireblast reduced from 30/70/110 to 20/40/60
+* Bloodlust can now be cast on Magic Immune allies
+
+Omniknight
+* Degen Aura slow increased from 7/14/21/28% to 10/18/26/34%
+
+Phantom Assassin
+* Phantom Strike bonus attack speed increased from 100 to 130
+
+Queen of Pain
+* Shadow Strike cast range increased from 435 to 450/475/500/525
+
+Riki
+* Smoke Screen cooldown reduced from 13 to 11
+
+Skywrath Mage
+* Ancient Seal damage amplification increased from 18/24/30/36% to 30/35/40/45%
+
+Slardar
+* Bash bonus damage increased from 40/60/80/100 to 60/80/100/120
+
+Treant Protector
+* Leech Seed damage per pulse decreased from 24/36/48/60 to 15/30/45/60
+
+Tusk
+* Snowball cooldown reduced from 21 to 21/20/19/18
+* Walrus Punch cooldown reduced from 30/24/18 to 25/20/15
+
+Undying
+* Intelligence growth increased from 2.0 to 2.5
+
+Windranger
+* Focus Fire manacost decreased from 150 to 75/100/125
+
+Zeus
+* Lightning Bolt vision and truesight duration increased from 3 to 4.5
+* Lightning Bolt search area of effect increased from 250 to 325
+
+
+ITEMS
+
+Mjollnir
+* Recipe cost increased from 600 to 900
+* Static Charge duration decreased from 20 to 15

@@ -1,0 +1,70 @@
+* Fixed the following panels not appearing: The Hall of Fame, Effigies and PA Arcana gravestones
+* Fixed bugs with Coaching
+* Added some new API calls for Bot Scripting
+* Fixed guides you've published not appearing in your guides list
+* The browse items tab now slides out as a modal panel instead of taking the place of the shop UI
+* Restored Shop purchase hotkeys
+* The pinned TP Scroll now shows a visual cooldown on it to indicate what the current TP cooldown is
+* Fixed various crashes
+* Minor 7.01 gameplay update
+
+7.01
+====
+* Added Necrophos to CM
+* XP Requirement to go from level 6 to 12 increased by 140 (615/630/645/660/675/775 to 640/660/680/700/720/740)
+* XP Requirement to go from level 12 to 20 increased by 140 (1175/1200/1225/1250/1275/1375/1400/1425 to 1200/1225/1250/1275/1300/1325/1400/1490)
+* XP Requirement to go from level 24 to 25 reduced by 280 (same overall XP required to reach level 25)
+* Fixed Jingu Mastery ignoring armor for its lifesteal calculation
+* Jingu Mastery counter duration reduced from 15 to 10 seconds
+* Boundless Strike critical strike rescaled from 200% to 140/160/180/200%
+* Howl cooldown increased from 50/45/40/35 to 55/50/45/40
+* Howl manacost increased from 15/20/25/30 to 30
+* Lycan Level 10 Talent reduced from +20 Damage to +15 Damage
+* Lycan agility gain reduced from 1.9 to 1.5
+* Familiars HP reduced from 500/750/1000 to 300/500/700
+* Visage base damage reduced by 3
+* Windranger Level 15 Talent increased from +13 Intelligence to +16 Intelligence
+* Windranger Level 15 Talent increased from +150 Health to +200 Health
+* Windrun cooldown from 14 to 13
+* Slark strength reduced from 21 + 1.8 to 20 + 1.6
+* Purification manacost rescaled from 70/90/110/130 to 85/100/115/130
+* Guardian Angel cooldown increased from 150 to 160
+* Invoker Level 15 Talent increased from 20% XP to 25% XP
+* Quas HP regen rescaled from 1.5/3/4.5/6/.. to 1/3/5/7/..
+* Invoker strength gain increased from 1.7 to 1.9
+* Centaur agility gain reduced from 2.0 to 1.6
+* Pit of Malice interval increased from 3.5 to 3.6 seconds
+* Pit of Malice cooldown increased from 30/26/22/18 to 32/28/24/20
+* Nature's Guise bash rescaled from 1/1.4/1.8/2.2 to 0.7/1.2/1.7/2.2
+* Treant Level 25 Talent changed from +20% 2s Bash to -50s Respawn Time
+* Treant Protector movement speed reduced from 300 to 295
+* Stifling Dagger base damage reduced from 70 to 65
+* Luna base armor reduced by 1
+* Reality Rift armor debuff rescaled from -3/4/5/6 to -1/3/5/7
+* Fixed Chaos Strike lifesteal ignoring armor reductions
+* Chaos Strike lifesteal increased from 50% to 65%
+* Nature's Prophet Level 15 Talent increased from +10 Intelligence to +15
+* Nature's Prophet Level 15 Talent increased from +15 Movement Speed to +20
+* Nature's Prophet Level 25 Talent increased from -35s Respawn Time to -40
+* Nature's Prophet Level 25 Talent changed from +6 Treants to 2x Treants HP/Damage
+* Meepo Clones are now allowed to pickup runes
+* Witch Doctor Level 25 Talent increased from +150 Death Ward Attack Range to +175
+* Sven Level 15 Talent increased from +6 all stats to +8
+* Sven Level 15 Talent increased from +15 MS to +20
+* Incapacitating Bite slow increased from 10/20/30/40 to 14/24/34/44%
+* Zeus Level 20 Talent increased from -35s Respawn Time to -40
+* Zeus Level 20 Talent increased from +30 Movement Speed to +35
+* Tusk turn rate improved from 0.5 to 0.7
+* Enchantress base intelligence increased by 3
+* Enchantress Level 10 Talent increased from +15 Movement Speed to +20
+* Enchantress Level 20 Talent increased from -25s Respawn Time to -30s
+* Geminate Attack cooldown from 6/5/4/3 to 7/6/5/3
+* Dream Coil cooldown reduced from 75 to 70/65/60
+* Lina Level 15 Talent increased from +100 Cast Range to +125
+* Lina Level 15 Talent increased from -25s Respawn to -30s
+* Lina Level 20 Talent increased from +5% Spell Amp to 6%
+* Death Prophet level 10 Talent increased from +6 Strength to 7
+* Doom Level 20 Talent increased from +50 Damage to +65
+* Doom Level 20 Talent increased from +20 Health Regen to +25
+* Smokescreen slow from 13/17/21/25% to 10/15/20/25%
+* Ogre Magi movement speed reduced from 295 to 290
