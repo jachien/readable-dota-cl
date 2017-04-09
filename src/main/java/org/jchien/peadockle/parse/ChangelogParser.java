@@ -48,16 +48,20 @@ public class ChangelogParser {
                 Set<Integer> heroIds = heroDict.parseEntryIds(line);
                 Set<Integer> itemIds = itemDict.parseEntryIds(line);
 
+                /*if (heroIds.size() > 1) {
+                    System.out.println(line + "\n\theroes: " + heroIds);
+                }
+
+                if (itemIds.size() > 1) {
+                    System.out.println(line + "\n\titems:" + heroIds);
+                }*/
+
                 if (!heroIds.isEmpty()) {
-                    for (int heroId : heroIds) {
-                        // todo format line, strip the entry name if the line starts with it
-                        getOrCreateChangeList(heroChangeMap, heroId).add(line);
-                    }
+                    int heroId = heroIds.stream().findFirst().get();
+                    getOrCreateChangeList(heroChangeMap, heroId).add(line);
                 } else if (!itemIds.isEmpty()) {
-                    for (int itemId : itemIds) {
-                        // todo format line, strip the entry name if the line starts with it
-                        getOrCreateChangeList(itemChangeMap, itemId).add(line);
-                    }
+                    int itemId = itemIds.stream().findFirst().get();
+                    getOrCreateChangeList(itemChangeMap, itemId).add(line);
                 } else {
                     // todo interpret general changes in groups based on double newlines
                     // todo better empty line detection
