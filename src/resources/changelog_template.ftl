@@ -90,7 +90,7 @@
                 <h3>Hero Changes</h3>
                 <#list changelog.heroChanges as cl>
                 <figure>
-                    <img data-id="${cl.name}" src="http://cdn.dota2.com/apps/dota2/images/items/${cl.name}_full.png">
+                    <img data-id="${cl.name}" src="http://cdn.dota2.com/apps/dota2/images/heroes/${cl.name}_full.png">
                     <h1>${cl.localizedName?html}:</h1>
                     <ul>
                         <#list cl.changes as change>
