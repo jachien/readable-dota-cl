@@ -21,6 +21,7 @@ public class Driver {
         ChangelogGenerator gen = new ChangelogGenerator();
 
         String[] patches = {
+                "705",
                 "704",
                 "702",
                 "701",

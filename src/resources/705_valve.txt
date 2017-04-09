@@ -1,0 +1,138 @@
+7.05:
+=====
+
+
+General:
+--
+* Enabled Treant Protector in Captains Mode
+* Towers base armor reduced by 2
+* Towers now gain 1 more armor per nearby enemy hero (3 total per enemy now)
+* Towers bonus armor based on nearby enemy heroes AoE increased from 1200 to 1400
+* Shrines base health regen reduced from 100 to 90
+* Intelligence based Spell Amplification increased from 1% per 16 Intelligence to 1% per 15
+* XP required to go from level 20 to 25 reduced from 10895 to 10000 (1600/1900/2200/2500/2695 to 1500/1750/2000/2250/2500)
+
+
+Items:
+--
+* Hand of Midas: XP bonus reduced from 2.5x to 1.75x
+* Hand of Midas: Gold bonus increased from 190 to 220
+* Orb of Venom: Slow duration reduced from 4 to 3
+* Orb of Venom: DPS increased from 3 to 5
+* Tranquil Boots: Requires Wind Lace instead of Ring of Protection
+* Tranquil Boots: No longer provides armor
+* Tranquil Boots: Active state regeneration increased from 12 to 14
+* Tranquil Boots: Active state movement speed increased from 85 to 90
+* Tranquil Boots: Disabled state movement speed increased from 55 to 65
+* Power Treads: Attribute bonus increased from 9 to 10
+* Quelling Blade: Bonus damage no longer stacks with Iron Talon
+
+
+Heroes:
+--
+* Abaddon: Strength gain reduced from 2.5 to 2.3
+* Ancient Apparition: Cold Feet damage per tick rescaled from 37.5/50/62.5/75 to 30/50/70/90
+* Ancient Apparition: Cold Feet cooldown from 13/11/9/7 to 10/9/8/7
+* Alchemist: Acid Spray radius rescaled from 625 to 400/475/550/625
+* Alchemist: Chemical Rage cooldown increased from 45 to 55
+* Bane: Level 15 Talent increased from +25% XP Gain to +30%
+* Bane: Level 20 Talent increased from +75 Enfeeble Damage Reduction to +90
+* Brewmaster: Earth Primal Unit's Demolish now gives +90/180/270 damage vs buildings (effectively 300% of base damage, instead of 300% of total damage)
+* Brewmaster: Earth Primal Unit's BAT reduced from 1.35 to 1.25
+* Brewmaster: Level 15 Talent increased from +12% Magic Resistance to +15%
+* Brewmaster: Level 20 Talent increased from -35s Respawn Time to -40s
+* Brewmaster: Level 25 Talent increased from +75 Damage to +120
+* Brewmaster: Level 25 Talent changed from +20 Primal Split Unit Armor to +2000 Health to Primal Split Units
+* Bristleback: Quill Spray AoE increased from 650 to 700
+* Bristleback: Level 15 Talent increased from +200 Health to +225
+* Bristleback: Level 25 Talent increased from +25 Health Regen to +30
+* Bristleback: Level 25 Talent increased from +20 Quill Stack Damage to +25
+* Broodmother: Incapacitating Bite slow increased from 14/24/34/44% to 16/26/36/46%
+* Broodmother: Level 15 Talent increased from +325 Health to +350
+* Broodmother: Level 25 Talent increased from +200 Spiders Health to +225
+* Chen: Level 10 Talent increased from +25 Movement Speed to +30
+* Chen: Level 20 Talent increased from -40s Respawn Time to -45s
+* Clockwerk: Base strength increased by 2
+* Death Prophet: Strength gain increased from 1.9 to 2.3
+* Death Prophet: Level 15 Talent increased from -1s Crypt Swarm Cooldown to -1.5s
+* Death Prophet: Level 15 Talent increased from +100 Cast Range to +150
+* Doom: Doom damage increased from 20/35/50 to 25/40/55
+* Doom: Level 10 Talent increased from +250 Health to +275
+* Doom: Level 15 Talent increased from +20 Movement Speed to +25
+* Doom: Level 20 Talent increased from +35 Doom DPS to +40
+* Doom: Level 20 Talent changed from +25 Health Regen to Devour Can Target Ancients
+* Doom: Level 25 Talent changed from Devour Can Target Ancients to +40 Health Regen
+* Dragon Knight: Level 10 Talent increased from +9 Strength to +10
+* Dragon Knight: Level 10 Talent increased from +25 Attack Speed to +30
+* Dragon Knight: Level 15 Talent increased from +35% XP Gain to +40%
+* Earth Spirit: Rolling Boulder slow duration reduced from 1.4/1.6/1.8/2.0 to 0.8/1.2/1.6/2
+* Ember Spirit: Strength gain reduced from 2.0 to 1.8
+* Enchantress: Intelligence growth increased from 2.8 to 3.1
+* Enchantress: Level 15 Talent increased from +7 Nature's Attendants Wisps to +8
+* Faceless Void: Agility gain increased from 2.65 to 2.8
+* Invoker: Base strength reduced by 1
+* Juggernaut: Base movement speed reduced by 5
+* Lich: Chain Frost slow increased from -30% to -50%
+* Lich: Chain Frost slow duration reduced from 4 to 2.5
+* Lich: Sacrifice cooldown reduced from 60/50/40/30 to 60/48/36/24
+* Lifestealer: Open Wounds manacost rescaled from 110 to 140/130/120/110
+* Lifestealer: Rage attack speed from 50/60/70/80 to 40/50/60/70
+* Lina: Level 10 Talent changed from -30s Respawn Time to +125 Cast Range
+* Lina: Level 15 Talent changed from +125 Cast Range to -30s Respawn Time
+* Lycan: Level 10 Talent increased from +175 Health to +200
+* Lycan: Shapeshift critical strike damage increased from 140/160/180 to 160/180/200%
+* Magnus: Empower manacost increased from 30/40/50/60 to 30/50/70/90
+* Magnus: Level 20 Talent reduced from +15% Empower Damage/Cleave to +10%
+* Monkey King: Boundless Strike stun duration reduced from 0.5/1/1.5/2.0 to 0.4/0.8/1.2/1.6
+* Monkey King: Primal Spring manacost rescaled from 100/110/120/130 to 130/120/110/100
+* Monkey King: Primal Spring slow from 30/45/60/75% to 20/40/60/80%
+* Monkey King: Primal Spring cooldown from 16 to 19/17/15/13
+* Monkey King: Strength growth from 2.2 to 2.5
+* Monkey King: Wukong's Command cooldown from 100/85/70 to 130/110/90
+* Nature's Prophet: Base damage increased by 6
+* Phantom Lancer: Phantom Rush bonus agility from 6/12/18/24 to 6/14/22/30
+* Phoenix: Base strength increased by 2
+* Pugna: Base movement speed increased from 330 to 335
+* Pugna: Level 25 Talent increased from +125 Nether Blast Damage to +150
+* Queen of Pain: Level 10 Talent increased from +9 Strength to +10
+* Queen of Pain: Shadow Strike cast range from 450/475/500/525 to 450/500/550/600
+* Queen of Pain: Shadow Strike damage per tick from 30/40/50/60 to 30/45/60/75
+* Razor: Base intelligence increased from 19 to 21
+* Razor: Level 10 Talent increased from +20 Movement Speed to +25
+* Razor: Level 15 Talent increased from +150 Cast Range to +175
+* Razor: Level 20 Talent increased from +325 Health to +400
+* Shadow Shaman: Level 10 Talent increased from +175 Health to +200
+* Shadow Shaman: Level 10 Talent increased from +20 Movement Speed to +25
+* Shadow Shaman: Level 15 Talent increased from +30% XP Gain to +35%
+* Shadow Shaman: Level 20 Talent changed from +20% Magic Resistance to +3 Shackles Duration
+* Shadow Shaman: Level 25 Talent changed from +3s Shackles Duration to +350 Ether Shock Damage
+* Skywrath Mage: Base movement speed increased from 325 to 330
+* Skywrath Mage: Level 10 Talent increased from +125 Health to +150
+* Sven: Great Cleave distance increased from 550 to 570
+* Sven: Level 10 Talent increased from +200 Mana to +225
+* Sven: Level 20 Talent increased from +15% Evasion to +20%
+* Sven: Level 25 Talent increased from -6s Storm Hammer Cooldown to -8s
+* Techies: Added a sound effect when Proximity Mines are being primed to explode
+* Techies: Level 20 Talent changed from -60s Respawn Time to +400 Blast Off Damage
+* Techies: Level 25 Talent changed from +400 Blast Off Damage to -60s Respawn Time
+* Tiny: Base damage increased by 3
+* Tiny: Level 15 Talent increased from +35 Movement Speed to +40
+* Treant Protector: Enabled in Captains Mode
+* Treant Protector: Leech Seed slow reduced from 22/24/26/28% to 16/20/24/28%
+* Treant Protector: Overgrowth cooldown rescaled from 70 to 100/85/70
+* Treant Protector: Base movement speed reduced by 5
+* Underlord: Level 10 Talent increased from +4 Armor to +5
+* Underlord: Level 15 Talent increased from +10% Spell Amplification to +12%
+* Underlord: Level 15 Talent increased from +35 Movement Speed to +40
+* Viper: Level 10 Talent increased from +150 Health to +175
+* Viper: Level 15 Talent increased from +8 Strength to +10
+* Viper: Level 15 Talent increased from +14 Agility to +16
+* Viper: Level 20 Talent changed from +7 Armor to Poison Attack Affects Buildings
+* Viper: Level 25 Talent changed from Poison Attack Affects Buildings to +20 Armor
+* Winter Wyvern: Level 15 Talent increased from +40 Damage to +50
+* Winter Wyvern: Level 15 Talent increased from +15 Movement Speed to +20
+* Zeus: Base intelligence increased by 2
+* Zeus: Level 10 Talent changed from +200 Health to +25 Movement Speed
+* Zeus: Level 15 Talent increased from +10% Magic Resistance to +15%
+* Zeus: Level 15 Talent increased from +5 Armor to +7 Armor
+* Zeus: Level 20 Talent changed from +35 Movement Speed to +75 Arc Lightning Damage
