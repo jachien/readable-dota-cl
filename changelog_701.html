@@ -1,0 +1,268 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <link href="http://cdn.dota2.com/apps/dota2/css/static/reset.css?v=3886334" rel="stylesheet" type="text/css">
+    <link href="http://www.dota2.com/public/css/global.css?v=b3886334" rel="stylesheet" type="text/css">
+    <link href="http://www.dota2.com/public/css/global_english.css?v=BpCw4C6e29Gp" rel="stylesheet" type="text/css">
+    <link href="http://www.dota2.com/public/css/bladeform_legacy.css?v=b3886334&amp;l=english" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://cdn.dota2.com/apps/dota2/javascript/static/jquery-1.7.1.min.js?v=3886334"></script>
+    <script type="text/javascript">$J = jQuery;</script>
+    <script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/shared/javascript/shared_global.js?v=mpbggNaqEKRe&amp;l=english"></script>
+    <!--<script type="text/javascript" src="http://www.dota2.com/public/javascript/lightcase/lightcase.dotahacks.js?v=.K6YQO3QNStJ-"></script>-->
+    <script type="text/javascript" src="http://cdn.dota2.com/apps/dota2/javascript/static/jquery.cycle.all.min.js?v=3886334"></script>
+    <script type="text/javascript" src="http://cdn.dota2.com/apps/dota2/javascript/static/jquery.easing.1.3.min.js?v=3886334"></script>
+    <script type="text/javascript" src="http://cdn.dota2.com/apps/dota2/javascript/static/jquery.imagesloaded.min.js?v=3886334"></script>
+    <script type="text/javascript" src="http://cdn.dota2.com/apps/dota2/javascript/static/spin.min.js?v=3886334"></script><style></style>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet">
+    <title>Dota 2 - 7.xx Changelog</title>
+
+    <script type="text/javascript">
+        $( function () {
+            $( '#BG6 #Items figure img' ).each( function () {
+                var strItemID = $( this ).attr( 'data-id' );
+                $( this ).attr( 'src', 'http://cdn.dota2.com/apps/dota2/images/items/' + strItemID + '_lg.png' );
+            });
+            $( '#BG6 #Heroes figure img' ).each( function () {
+                var strHeroID = $( this ).attr( 'data-id' );
+                $( this ).attr( 'src', 'http://cdn.dota2.com/apps/dota2/images/heroes/' + strHeroID + '_full.png' );
+            });
+        });
+    </script>
+</head>
+
+<body>
+<script language="javascript">
+
+    function MM_preloadImages() { //v3.0
+        var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+            var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+                if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+    }
+
+    function PreloadHeaderImages()
+    {
+        //  Preload header rollover images
+        //MM_preloadImages(
+        //);
+    }
+
+    if ( document.addEventListener ) {
+        document.addEventListener( "DOMContentLoaded", PreloadHeaderImages, false );
+    } else if ( document.attachEvent ) {
+        document.attachEvent( 'onDomContentLoaded', PreloadHeaderImages );
+    }
+
+</script>
+
+<div id="BG6" class="Outer">
+    <div class="Inner">
+        <h2>7.xx Gameplay Update</h2>
+        <div id="General">
+            <h3>General Changes</h3>
+            <figure>
+                <ul>
+                    <li>Fixed the following panels not appearing: The Hall of Fame, Effigies and PA Arcana gravestones</li>
+                    <li>Fixed bugs with Coaching</li>
+                    <li>Added some new API calls for Bot Scripting</li>
+                    <li>Fixed guides you&#39;ve published not appearing in your guides list</li>
+                    <li>The browse items tab now slides out as a modal panel instead of taking the place of the shop UI</li>
+                    <li>Restored Shop purchase hotkeys</li>
+                    <li>The pinned TP Scroll now shows a visual cooldown on it to indicate what the current TP cooldown is</li>
+                    <li>Fixed various crashes</li>
+                    <li>Minor 7.01 gameplay update</li>
+                    <li>7.01</li>
+                    <li>XP Requirement to go from level 6 to 12 increased by 140 (615/630/645/660/675/775 to 640/660/680/700/720/740)</li>
+                    <li>XP Requirement to go from level 12 to 20 increased by 140 (1175/1200/1225/1250/1275/1375/1400/1425 to 1200/1225/1250/1275/1300/1325/1400/1490)</li>
+                    <li>XP Requirement to go from level 24 to 25 reduced by 280 (same overall XP required to reach level 25)</li>
+                    <li>Fixed Jingu Mastery ignoring armor for its lifesteal calculation</li>
+                    <li>Jingu Mastery counter duration reduced from 15 to 10 seconds</li>
+                    <li>Boundless Strike critical strike rescaled from 200% to 140/160/180/200%</li>
+                    <li>Howl cooldown increased from 50/45/40/35 to 55/50/45/40</li>
+                    <li>Howl manacost increased from 15/20/25/30 to 30</li>
+                    <li>Familiars HP reduced from 500/750/1000 to 300/500/700</li>
+                    <li>Windrun cooldown from 14 to 13</li>
+                    <li>Purification manacost rescaled from 70/90/110/130 to 85/100/115/130</li>
+                    <li>Guardian Angel cooldown increased from 150 to 160</li>
+                    <li>Quas HP regen rescaled from 1.5/3/4.5/6/.. to 1/3/5/7/..</li>
+                    <li>Pit of Malice interval increased from 3.5 to 3.6 seconds</li>
+                    <li>Pit of Malice cooldown increased from 30/26/22/18 to 32/28/24/20</li>
+                    <li>Nature&#39;s Guise bash rescaled from 1/1.4/1.8/2.2 to 0.7/1.2/1.7/2.2</li>
+                    <li>Treant Level 25 Talent changed from +20% 2s Bash to -50s Respawn Time</li>
+                    <li>Stifling Dagger base damage reduced from 70 to 65</li>
+                    <li>Reality Rift armor debuff rescaled from -3/4/5/6 to -1/3/5/7</li>
+                    <li>Fixed Chaos Strike lifesteal ignoring armor reductions</li>
+                    <li>Chaos Strike lifesteal increased from 50% to 65%</li>
+                    <li>Incapacitating Bite slow increased from 10/20/30/40 to 14/24/34/44%</li>
+                    <li>Geminate Attack cooldown from 6/5/4/3 to 7/6/5/3</li>
+                    <li>Dream Coil cooldown reduced from 75 to 70/65/60</li>
+                    <li>Smokescreen slow from 13/17/21/25% to 10/15/20/25%</li>
+                </ul>
+            </figure>
+
+            <div id="Items">
+                <h3>Item Changes</h3>
+            </div>
+
+            <div id="Heroes">
+                <h3>Hero Changes</h3>
+                <figure>
+                    <img data-id="centaur" src="http://cdn.dota2.com/apps/dota2/images/items/centaur_full.png">
+                    <h1>Centaur Warrunner:</h1>
+                    <ul>
+                            <li>Agility gain reduced from 2.0 to 1.6</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="death_prophet" src="http://cdn.dota2.com/apps/dota2/images/items/death_prophet_full.png">
+                    <h1>Death Prophet:</h1>
+                    <ul>
+                            <li>Level 10 Talent increased from +6 Strength to 7</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="doom_bringer" src="http://cdn.dota2.com/apps/dota2/images/items/doom_bringer_full.png">
+                    <h1>Doom:</h1>
+                    <ul>
+                            <li>Level 20 Talent increased from +50 Damage to +65</li>
+                            <li>Level 20 Talent increased from +20 Health Regen to +25</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="enchantress" src="http://cdn.dota2.com/apps/dota2/images/items/enchantress_full.png">
+                    <h1>Enchantress:</h1>
+                    <ul>
+                            <li>Base intelligence increased by 3</li>
+                            <li>Level 10 Talent increased from +15 Movement Speed to +20</li>
+                            <li>Level 20 Talent increased from -25s Respawn Time to -30s</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="invoker" src="http://cdn.dota2.com/apps/dota2/images/items/invoker_full.png">
+                    <h1>Invoker:</h1>
+                    <ul>
+                            <li>Level 15 Talent increased from 20% XP to 25% XP</li>
+                            <li>Strength gain increased from 1.7 to 1.9</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="lina" src="http://cdn.dota2.com/apps/dota2/images/items/lina_full.png">
+                    <h1>Lina:</h1>
+                    <ul>
+                            <li>Level 15 Talent increased from +100 Cast Range to +125</li>
+                            <li>Level 15 Talent increased from -25s Respawn to -30s</li>
+                            <li>Level 20 Talent increased from +5% Spell Amp to 6%</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="luna" src="http://cdn.dota2.com/apps/dota2/images/items/luna_full.png">
+                    <h1>Luna:</h1>
+                    <ul>
+                            <li>Base armor reduced by 1</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="lycan" src="http://cdn.dota2.com/apps/dota2/images/items/lycan_full.png">
+                    <h1>Lycan:</h1>
+                    <ul>
+                            <li>Level 10 Talent reduced from +20 Damage to +15 Damage</li>
+                            <li>Agility gain reduced from 1.9 to 1.5</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="meepo" src="http://cdn.dota2.com/apps/dota2/images/items/meepo_full.png">
+                    <h1>Meepo:</h1>
+                    <ul>
+                            <li>Clones are now allowed to pickup runes</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="furion" src="http://cdn.dota2.com/apps/dota2/images/items/furion_full.png">
+                    <h1>Nature&#39;s Prophet:</h1>
+                    <ul>
+                            <li>Level 15 Talent increased from +10 Intelligence to +15</li>
+                            <li>Level 15 Talent increased from +15 Movement Speed to +20</li>
+                            <li>Level 25 Talent increased from -35s Respawn Time to -40</li>
+                            <li>Level 25 Talent changed from +6 Treants to 2x Treants HP/Damage</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="necrolyte" src="http://cdn.dota2.com/apps/dota2/images/items/necrolyte_full.png">
+                    <h1>Necrophos:</h1>
+                    <ul>
+                            <li>Added Necrophos to CM</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="ogre_magi" src="http://cdn.dota2.com/apps/dota2/images/items/ogre_magi_full.png">
+                    <h1>Ogre Magi:</h1>
+                    <ul>
+                            <li>Movement speed reduced from 295 to 290</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="slark" src="http://cdn.dota2.com/apps/dota2/images/items/slark_full.png">
+                    <h1>Slark:</h1>
+                    <ul>
+                            <li>Strength reduced from 21 + 1.8 to 20 + 1.6</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="sven" src="http://cdn.dota2.com/apps/dota2/images/items/sven_full.png">
+                    <h1>Sven:</h1>
+                    <ul>
+                            <li>Level 15 Talent increased from +6 all stats to +8</li>
+                            <li>Level 15 Talent increased from +15 MS to +20</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="treant" src="http://cdn.dota2.com/apps/dota2/images/items/treant_full.png">
+                    <h1>Treant Protector:</h1>
+                    <ul>
+                            <li>Movement speed reduced from 300 to 295</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="tusk" src="http://cdn.dota2.com/apps/dota2/images/items/tusk_full.png">
+                    <h1>Tusk:</h1>
+                    <ul>
+                            <li>Turn rate improved from 0.5 to 0.7</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="visage" src="http://cdn.dota2.com/apps/dota2/images/items/visage_full.png">
+                    <h1>Visage:</h1>
+                    <ul>
+                            <li>Base damage reduced by 3</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="windrunner" src="http://cdn.dota2.com/apps/dota2/images/items/windrunner_full.png">
+                    <h1>Windranger:</h1>
+                    <ul>
+                            <li>Level 15 Talent increased from +13 Intelligence to +16 Intelligence</li>
+                            <li>Level 15 Talent increased from +150 Health to +200 Health</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="witch_doctor" src="http://cdn.dota2.com/apps/dota2/images/items/witch_doctor_full.png">
+                    <h1>Witch Doctor:</h1>
+                    <ul>
+                            <li>Level 25 Talent increased from +150 Death Ward Attack Range to +175</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="zuus" src="http://cdn.dota2.com/apps/dota2/images/items/zuus_full.png">
+                    <h1>Zeus:</h1>
+                    <ul>
+                            <li>Level 20 Talent increased from -35s Respawn Time to -40</li>
+                            <li>Level 20 Talent increased from +30 Movement Speed to +35</li>
+                    </ul>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

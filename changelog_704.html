@@ -1,0 +1,279 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <link href="http://cdn.dota2.com/apps/dota2/css/static/reset.css?v=3886334" rel="stylesheet" type="text/css">
+    <link href="http://www.dota2.com/public/css/global.css?v=b3886334" rel="stylesheet" type="text/css">
+    <link href="http://www.dota2.com/public/css/global_english.css?v=BpCw4C6e29Gp" rel="stylesheet" type="text/css">
+    <link href="http://www.dota2.com/public/css/bladeform_legacy.css?v=b3886334&amp;l=english" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://cdn.dota2.com/apps/dota2/javascript/static/jquery-1.7.1.min.js?v=3886334"></script>
+    <script type="text/javascript">$J = jQuery;</script>
+    <script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/shared/javascript/shared_global.js?v=mpbggNaqEKRe&amp;l=english"></script>
+    <!--<script type="text/javascript" src="http://www.dota2.com/public/javascript/lightcase/lightcase.dotahacks.js?v=.K6YQO3QNStJ-"></script>-->
+    <script type="text/javascript" src="http://cdn.dota2.com/apps/dota2/javascript/static/jquery.cycle.all.min.js?v=3886334"></script>
+    <script type="text/javascript" src="http://cdn.dota2.com/apps/dota2/javascript/static/jquery.easing.1.3.min.js?v=3886334"></script>
+    <script type="text/javascript" src="http://cdn.dota2.com/apps/dota2/javascript/static/jquery.imagesloaded.min.js?v=3886334"></script>
+    <script type="text/javascript" src="http://cdn.dota2.com/apps/dota2/javascript/static/spin.min.js?v=3886334"></script><style></style>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet">
+    <title>Dota 2 - 7.xx Changelog</title>
+
+    <script type="text/javascript">
+        $( function () {
+            $( '#BG6 #Items figure img' ).each( function () {
+                var strItemID = $( this ).attr( 'data-id' );
+                $( this ).attr( 'src', 'http://cdn.dota2.com/apps/dota2/images/items/' + strItemID + '_lg.png' );
+            });
+            $( '#BG6 #Heroes figure img' ).each( function () {
+                var strHeroID = $( this ).attr( 'data-id' );
+                $( this ).attr( 'src', 'http://cdn.dota2.com/apps/dota2/images/heroes/' + strHeroID + '_full.png' );
+            });
+        });
+    </script>
+</head>
+
+<body>
+<script language="javascript">
+
+    function MM_preloadImages() { //v3.0
+        var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+            var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+                if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+    }
+
+    function PreloadHeaderImages()
+    {
+        //  Preload header rollover images
+        //MM_preloadImages(
+        //);
+    }
+
+    if ( document.addEventListener ) {
+        document.addEventListener( "DOMContentLoaded", PreloadHeaderImages, false );
+    } else if ( document.attachEvent ) {
+        document.attachEvent( 'onDomContentLoaded', PreloadHeaderImages );
+    }
+
+</script>
+
+<div id="BG6" class="Outer">
+    <div class="Inner">
+        <h2>7.xx Gameplay Update</h2>
+        <div id="General">
+            <h3>General Changes</h3>
+            <figure>
+                <ul>
+                    <li>7.04:</li>
+                </ul>
+            </figure>
+
+            <div id="Items">
+                <h3>Item Changes</h3>
+                <figure>
+                    <img data-id="ghost" src="http://cdn.dota2.com/apps/dota2/images/items/ghost_lg.png">
+                    <h1>Ghost Scepter:</h1>
+                    <ul>
+                            <li>Cooldown reduced from 25 to 20</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="heavens_halberd" src="http://cdn.dota2.com/apps/dota2/images/items/heavens_halberd_lg.png">
+                    <h1>Heaven&#39;s Halberd:</h1>
+                    <ul>
+                            <li>Cooldown reduced from 22 to 18</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="hurricane_pike" src="http://cdn.dota2.com/apps/dota2/images/items/hurricane_pike_lg.png">
+                    <h1>Hurricane Pike:</h1>
+                    <ul>
+                            <li>Recipe increased from 250 to 500</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="sange_and_yasha" src="http://cdn.dota2.com/apps/dota2/images/items/sange_and_yasha_lg.png">
+                    <h1>Sange and Yasha:</h1>
+                    <ul>
+                            <li>Proc chance increased from 35% to 40%</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="silver_edge" src="http://cdn.dota2.com/apps/dota2/images/items/silver_edge_lg.png">
+                    <h1>Silver Edge:</h1>
+                    <ul>
+                            <li>Recipe increased from 300 to 500</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="slippers" src="http://cdn.dota2.com/apps/dota2/images/items/slippers_lg.png">
+                    <h1>Slippers of Agility:</h1>
+                    <ul>
+                            <li>Are no longer available in the Side Shop</li>
+                    </ul>
+                </figure>
+            </div>
+
+            <div id="Heroes">
+                <h3>Hero Changes</h3>
+                <figure>
+                    <img data-id="abaddon" src="http://cdn.dota2.com/apps/dota2/images/items/abaddon_full.png">
+                    <h1>Abaddon:</h1>
+                    <ul>
+                            <li>Strength gain reduced from 2.7 to 2.5</li>
+                            <li>Mist Coil projectile speed reduced from 2000 to 1600</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="ancient_apparition" src="http://cdn.dota2.com/apps/dota2/images/items/ancient_apparition_full.png">
+                    <h1>Ancient Apparition:</h1>
+                    <ul>
+                            <li>Cold Feet manacost reduced from 150 to 125</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="arc_warden" src="http://cdn.dota2.com/apps/dota2/images/items/arc_warden_full.png">
+                    <h1>Arc Warden:</h1>
+                    <ul>
+                            <li>Strength gain increased from 2.3 to 2.7</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="brewmaster" src="http://cdn.dota2.com/apps/dota2/images/items/brewmaster_full.png">
+                    <h1>Brewmaster:</h1>
+                    <ul>
+                            <li>Drunken Brawler cooldown reduced from 16/14/12/10 to 13/12/11/10</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="bristleback" src="http://cdn.dota2.com/apps/dota2/images/items/bristleback_full.png">
+                    <h1>Bristleback:</h1>
+                    <ul>
+                            <li>Quill Spray AoE increased from 625 to 650</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="broodmother" src="http://cdn.dota2.com/apps/dota2/images/items/broodmother_full.png">
+                    <h1>Broodmother:</h1>
+                    <ul>
+                            <li>Insatiable Hunger lifesteal increased from 60/90/120% to 60/100/140%</li>
+                            <li>Insatiable Hunger damage increased from 60/90/120 to 60/100/140</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="centaur" src="http://cdn.dota2.com/apps/dota2/images/items/centaur_full.png">
+                    <h1>Centaur Warrunner:</h1>
+                    <ul>
+                            <li>Stampede Scepter damage reduction reduced from 50% to 40%</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="death_prophet" src="http://cdn.dota2.com/apps/dota2/images/items/death_prophet_full.png">
+                    <h1>Death Prophet:</h1>
+                    <ul>
+                            <li>Level 10 Talent increased from +10% Magic Resistance to +12%</li>
+                            <li>Exorcism spirit damage increased from 55 to 58</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="keeper_of_the_light" src="http://cdn.dota2.com/apps/dota2/images/items/keeper_of_the_light_full.png">
+                    <h1>Keeper of the Light:</h1>
+                    <ul>
+                            <li>Base damage reduced from 43-57 to 43-50</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="kunkka" src="http://cdn.dota2.com/apps/dota2/images/items/kunkka_full.png">
+                    <h1>Kunkka:</h1>
+                    <ul>
+                            <li>Level 10 Talent increased from +25 Damage to +30</li>
+                            <li>Level 15 Talent increased from +20 Movement Speed to +30</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="lich" src="http://cdn.dota2.com/apps/dota2/images/items/lich_full.png">
+                    <h1>Lich:</h1>
+                    <ul>
+                            <li>Chain Frost cooldown reduced from 120/90/60 to 100/80/60</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="life_stealer" src="http://cdn.dota2.com/apps/dota2/images/items/life_stealer_full.png">
+                    <h1>Lifestealer:</h1>
+                    <ul>
+                            <li>Base damage reduced by 2</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="lone_druid" src="http://cdn.dota2.com/apps/dota2/images/items/lone_druid_full.png">
+                    <h1>Lone Druid:</h1>
+                    <ul>
+                            <li>Level 15 Talent increased from +30 Spirit Bear Damage to +50</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="lycan" src="http://cdn.dota2.com/apps/dota2/images/items/lycan_full.png">
+                    <h1>Lycan:</h1>
+                    <ul>
+                            <li>Base strength increased by 3</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="magnataur" src="http://cdn.dota2.com/apps/dota2/images/items/magnataur_full.png">
+                    <h1>Magnus:</h1>
+                    <ul>
+                            <li>Base attack time increased from 1.7 to 1.8</li>
+                            <li>Reverse Polarity cooldown increased from 120/110/100 to 120</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="monkey_king" src="http://cdn.dota2.com/apps/dota2/images/items/monkey_king_full.png">
+                    <h1>Monkey King:</h1>
+                    <ul>
+                            <li>Primal Spring slow rescaled from 40/50/60/70% to 30/45/60/75%</li>
+                            <li>Spring winding up sound effect can be heard by nearby enemies</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="furion" src="http://cdn.dota2.com/apps/dota2/images/items/furion_full.png">
+                    <h1>Nature&#39;s Prophet:</h1>
+                    <ul>
+                            <li>Level 10 Talent increased from +225 Health to +250</li>
+                            <li>Level 15 Talent changed from +35 Movement Speed to +4 Treants Summoned</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="phoenix" src="http://cdn.dota2.com/apps/dota2/images/items/phoenix_full.png">
+                    <h1>Phoenix:</h1>
+                    <ul>
+                            <li>Level 15 Talent increased from +120 Gold/Min to 150</li>
+                            <li>Level 15 Talent increased from +50 Fire Spirits DPS to +65</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="puck" src="http://cdn.dota2.com/apps/dota2/images/items/puck_full.png">
+                    <h1>Puck:</h1>
+                    <ul>
+                            <li>Base damage increased by 3</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="queenofpain" src="http://cdn.dota2.com/apps/dota2/images/items/queenofpain_full.png">
+                    <h1>Queen of Pain:</h1>
+                    <ul>
+                            <li>Shadow Strike cast point reduced from 0.452 to 0.4</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="razor" src="http://cdn.dota2.com/apps/dota2/images/items/razor_full.png">
+                    <h1>Razor:</h1>
+                    <ul>
+                            <li>Level 20 Talent increased from +30 Attack Speed to +40</li>
+                            <li>Level 20 Talent increased from +275 Health to +325</li>
+                    </ul>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

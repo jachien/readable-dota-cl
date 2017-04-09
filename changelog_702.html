@@ -1,0 +1,1160 @@
+<html>
+<head>
+    <link rel="shortcut icon" href="/favicon.ico">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+    <link href="http://cdn.dota2.com/apps/dota2/css/static/reset.css?v=3886334" rel="stylesheet" type="text/css">
+    <link href="http://www.dota2.com/public/css/global.css?v=b3886334" rel="stylesheet" type="text/css">
+    <link href="http://www.dota2.com/public/css/global_english.css?v=BpCw4C6e29Gp" rel="stylesheet" type="text/css">
+    <link href="http://www.dota2.com/public/css/bladeform_legacy.css?v=b3886334&amp;l=english" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="http://cdn.dota2.com/apps/dota2/javascript/static/jquery-1.7.1.min.js?v=3886334"></script>
+    <script type="text/javascript">$J = jQuery;</script>
+    <script type="text/javascript" src="http://steamcommunity-a.akamaihd.net/public/shared/javascript/shared_global.js?v=mpbggNaqEKRe&amp;l=english"></script>
+    <!--<script type="text/javascript" src="http://www.dota2.com/public/javascript/lightcase/lightcase.dotahacks.js?v=.K6YQO3QNStJ-"></script>-->
+    <script type="text/javascript" src="http://cdn.dota2.com/apps/dota2/javascript/static/jquery.cycle.all.min.js?v=3886334"></script>
+    <script type="text/javascript" src="http://cdn.dota2.com/apps/dota2/javascript/static/jquery.easing.1.3.min.js?v=3886334"></script>
+    <script type="text/javascript" src="http://cdn.dota2.com/apps/dota2/javascript/static/jquery.imagesloaded.min.js?v=3886334"></script>
+    <script type="text/javascript" src="http://cdn.dota2.com/apps/dota2/javascript/static/spin.min.js?v=3886334"></script><style></style>
+    <link href="https://fonts.googleapis.com/css?family=Cinzel:400,700" rel="stylesheet">
+    <title>Dota 2 - 7.xx Changelog</title>
+
+    <script type="text/javascript">
+        $( function () {
+            $( '#BG6 #Items figure img' ).each( function () {
+                var strItemID = $( this ).attr( 'data-id' );
+                $( this ).attr( 'src', 'http://cdn.dota2.com/apps/dota2/images/items/' + strItemID + '_lg.png' );
+            });
+            $( '#BG6 #Heroes figure img' ).each( function () {
+                var strHeroID = $( this ).attr( 'data-id' );
+                $( this ).attr( 'src', 'http://cdn.dota2.com/apps/dota2/images/heroes/' + strHeroID + '_full.png' );
+            });
+        });
+    </script>
+</head>
+
+<body>
+<script language="javascript">
+
+    function MM_preloadImages() { //v3.0
+        var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+            var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+                if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+    }
+
+    function PreloadHeaderImages()
+    {
+        //  Preload header rollover images
+        //MM_preloadImages(
+        //);
+    }
+
+    if ( document.addEventListener ) {
+        document.addEventListener( "DOMContentLoaded", PreloadHeaderImages, false );
+    } else if ( document.attachEvent ) {
+        document.attachEvent( 'onDomContentLoaded', PreloadHeaderImages );
+    }
+
+</script>
+
+<div id="BG6" class="Outer">
+    <div class="Inner">
+        <h2>7.xx Gameplay Update</h2>
+        <div id="General">
+            <h3>General Changes</h3>
+            <figure>
+                <ul>
+                    <li>7.02</li>
+                    <li>General Changes:</li>
+                    <li>Shrines are now vulnerable after a T3 tower dies (same as the Shrines inside the base), rather than after all T2 towers die</li>
+                    <li>Satyr Trickster Purge slow from 100/80/60/40/20% over 5 seconds to 50/40/30/20/10%</li>
+                    <li>Towers no longer attack neutral team units</li>
+                    <li>The following abilities cause neutrals to temporarily not draw aggro: Meat Hook, Telekinesis and Toss</li>
+                    <li>Added more trees for TP cover around the dire towers</li>
+                    <li>Swapped the dire secondary jungle ancients and medium camp spots (and improved spawn boxes/stackability)</li>
+                    <li>The Dire ward spot to the left of the Ancients no longer gives vision over the rune area infront of Roshan</li>
+                    <li>Slightly adjusted the dire secondary jungle bounty rune further back</li>
+                    <li>Reduced spawnbox size for both Dire hard camps</li>
+                    <li>Shifted down the spawnbox for the ancient camp (formerly medium camp) in the Dire secondary jungle (so a high ground ward does not block the camp)</li>
+                    <li>Fixed a rare case where Dire ancients could be stuck between trees when spawning</li>
+                    <li>Hero Changes:</li>
+                    <li>Level 10 Talent from +15% XP Gain to +20%</li>
+                    <li>Level 15 Talent from +15 Movement Speed to +80 Unstable Concoction Damage</li>
+                    <li>Level 25 Talent from -4 Acid Spray Armor to -5</li>
+                    <li>Level 15 Talent from +25 Health Regen to +30</li>
+                    <li>Level 15 Talent from +15 Intelligence to -1s Ice Vortex Cooldown</li>
+                    <li>Level 20 Talent from -30s Respawn Time to -35s</li>
+                    <li>Level 10 Talent from +6 Strength to +150 Health</li>
+                    <li>Level 15 Talent from +250 Health to -1s Blink Cooldown</li>
+                    <li>Level 25 Talent from -2s Blink Cooldown to -50s Mana Void Cooldown</li>
+                    <li>Level 10 Talent from +125 Health to +20 Flux DPS</li>
+                    <li>Level 15 Talent from +8 Strength to +200 Health</li>
+                    <li>Level 20 Talent from +30 Movement Speed to +35</li>
+                    <li>Level 20 Talent from +35 Movement Speed to +75 Enfeeble Damage Reduction</li>
+                    <li>Level 25 Talent from +120 Enfeeble Damage Reduction to +75 Movement Speed</li>
+                    <li>Level 15 Talent from +175 Health to +200</li>
+                    <li>Level 10 Talent from +15% XP Gain to +20%</li>
+                    <li>Level 15 Talent from -30s Respawn Time to -35s</li>
+                    <li>Level 20 Talent from +300 Health to +350</li>
+                    <li>Level 25 Talent from +175 Wild Axes Damage to +250</li>
+                    <li>Level 10 Talent from +5 Armor to +200 Health</li>
+                    <li>Level 15 Talent from +250 Health to +75 Blood Rite Damage</li>
+                    <li>Level 20 Talent from -30s Respawn Time to +14% Rupture Damage</li>
+                    <li>Scepter now also increases Shuriken Toss ministun duration from 0.1 to 0.75</li>
+                    <li>Level 10 Talent from +15% XP Gain to +20%</li>
+                    <li>Level 20 Talent from +100 Damage to +120 Damage</li>
+                    <li>Level 20 Talent from 8% Spell Amplification to +75 Shuriken Toss Damage</li>
+                    <li>Level 25 Talent from +20% Evasion to +25%</li>
+                    <li>Fire Spirit now has phasing movement</li>
+                    <li>Level 10 Talent from +25 Attack Speed to +30</li>
+                    <li>Level 15 Talent from +20 Movement Speed to +75 Thunder Clap Damage</li>
+                    <li>Level 20 Talent from -25s Respawn Time to -35s</li>
+                    <li>Level 25 Talent from 14 Primal Split Unit Armor to +20</li>
+                    <li>Quill Spray Max damage from 450 to 550</li>
+                    <li>Viscous Nasal Goo Scepter range from 700 to 750</li>
+                    <li>Level 15 Talent from +20 Movement Speed to +4 Max Goo Stacks</li>
+                    <li>Level 20 Talent from -30s Respawn Time to -35s</li>
+                    <li>Level 25 Talent from +4 Max Goo Stacks to +20 Quill Stack Damage</li>
+                    <li>Level 10 Talent from +15% XP Gain to +25%</li>
+                    <li>Level 10 Talent from +10 Agility to +60 Spawn Spiderling Damage</li>
+                    <li>Level 15 Talent from +7 Armor to +250 Health</li>
+                    <li>Level 20 Talent from +300 Health to +8 Spiders Attack Damage</li>
+                    <li>Level 10 Talent from +30 Damage to +35</li>
+                    <li>Level 10 Talent from +7 Intelligence to +8</li>
+                    <li>Level 15 Talent from +15 Movement Speed to +20</li>
+                    <li>Level 10 Talent from +15 Movement Speed to +25</li>
+                    <li>Level 15 Talent from +25% Spell Amplification to -10s Test of Faith Cooldown</li>
+                    <li>Level 15 Talent from +200 Health to +250</li>
+                    <li>Level 15 Talent from +12 Strength to +15</li>
+                    <li>Level 15 Talent from +40 Damage to +50</li>
+                    <li>Level 15 Talent from +15 Movement Speed to +75 Rocket Flare Damage</li>
+                    <li>Level 10 Talent from +50 Damage to +60</li>
+                    <li>Level 15 Talent from +200 Health to +250</li>
+                    <li>Level 25 Talent from +200 Crystal Nova Damage to +250</li>
+                    <li>Movement speed reduced from 300 to 295</li>
+                    <li>Ion Shell manacost from 70/90/110/130 to 100/110/120/130</li>
+                    <li>Level 15 Talent from +90 Damage to +120</li>
+                    <li>Level 20 Talent from +25 Intelligence to +75 Vacuum AoE</li>
+                    <li>Level 20 Talent from +12 Strength to +10% Cooldown Reduction</li>
+                    <li>Level 25 Talent from +12% Cooldown Reduction to +25 Strength</li>
+                    <li>Level 25 Talent from +70 Ion Shell Damage to +80</li>
+                    <li>Level 15 Talent from +40 Damage to +60</li>
+                    <li>Level 10 Talent from +7 Strength to +8% Magic Resistance</li>
+                    <li>Level 15 Talent from +8% Magic Resistance to -1s Crypt Swarm Cooldown</li>
+                    <li>Level 15 Talent from +75 Cast Range to +100</li>
+                    <li>Level 15 Talent from +200 Health to -3s Kinetic Field Cooldown</li>
+                    <li>Level 20 Talent from 15% Cooldown Reduction to +400 Health</li>
+                    <li>Level 10 Talent from +8 Intelligence to +80 Devour Bonus Gold</li>
+                    <li>Level 10 Talent from +150 Health to +250</li>
+                    <li>Level 15 Talent from +6 Armor to +15 Scorched Earth Damage/Heal</li>
+                    <li>Level 15 Talent from +15 Movement Speed to +20</li>
+                    <li>Level 10 Talent from +6 Strength to 7</li>
+                    <li>Level 15 Talent from +25% XP Gain to +35%</li>
+                    <li>Level 25 Talent from +50 Movement Speed to +60</li>
+                    <li>Level 25 Talent from +350 Gust Distance/Knockback to +400</li>
+                    <li>Level 25 Talent from -35s Respawn Time to -45s</li>
+                    <li>Base HP regen from 0.25 to 0.75</li>
+                    <li>Level 20 Talent from +10% Spell Amplification to +40 Echo Damage</li>
+                    <li>Level 25 Talent from +500 Health to +600 Health</li>
+                    <li>Natural Order AoE from 325 to 350</li>
+                    <li>Level 15 Talent from +25% XP Gain to +30 Echo Stomp Damage</li>
+                    <li>Level 25 Talent from +80 Astral Spirit Hero Attack to +100</li>
+                    <li>Root now disables Activate Fire Remnant</li>
+                    <li>Level 10 Talent from 15% Spell Amplification to 12%</li>
+                    <li>Level 10 Talent from +5 All Stats to +6</li>
+                    <li>Level 10 Talent from +20 Movement Speed to +25</li>
+                    <li>Level 15 Talent from +40 Damage to +50</li>
+                    <li>Level 15 Talent from +8s Nature&#39;s Attendants Duration to +10</li>
+                    <li>Level 20 Talent from -30s Respawn Time to +60 Untouchable Slow</li>
+                    <li>Level 25 Talent from +25 Intelligence to -50 Respawn Time</li>
+                    <li>Level 25 Talent from +10 Nature&#39;s Attendants Wisps to +12</li>
+                    <li>Level 20 Talent from -30s Respawn Time to -40s</li>
+                    <li>Level 10 Talent from +5 Strength to +7</li>
+                    <li>Level 10 Talent from +150 Health to +200</li>
+                    <li>Level 15 Talent from +10% Magic Resistance to +12%</li>
+                    <li>Level 20 Talent from +25 Movement Speed to +35</li>
+                    <li>Level 10 Talent from +15 Movement Speed to +5 Burning Spears DPS</li>
+                    <li>Level 10 Talent from +150 Health to +175</li>
+                    <li>Level 15 Talent from +25% XP Gain to +30%</li>
+                    <li>Level 25 Talent from -15s Tornado Cooldown to -18s</li>
+                    <li>Level 25 Talent from -40s Respawn Time to -50s</li>
+                    <li>Level 10 Talent from +15% XP Gain to +20%</li>
+                    <li>Level 15 Talent from +250 Health to +25 Dual Breath Burn Damage</li>
+                    <li>Healing Ward now has a 25 gold bounty</li>
+                    <li>Level 10 Talent from +150 Health to +175 Health</li>
+                    <li>Level 15 Talent from +6 Armor to 7</li>
+                    <li>Level 10 Talent from +6 Strength to +7</li>
+                    <li>Level 25 Talent from +300 Cast Range to +400</li>
+                    <li>Tidebringer Cleave Distance from 675/750/825/900 to 650/800/950/1100</li>
+                    <li>Tidebringer Cleave Radius from 450/500/550/600 to 500/550/600/650</li>
+                    <li>Level 10 Talent from +150 Mana to +40 Torrent Damage</li>
+                    <li>Level 10 Talent from +20 Damage to +25</li>
+                    <li>Level 25 Talent from +25% Magic Resistance to +35%</li>
+                    <li>Level 10 Talent from +15% XP Gain to +20%</li>
+                    <li>Level 15 Talent from +8% Magic Resistance to +10%</li>
+                    <li>Level 20 Talent from +12 Strength to +15</li>
+                    <li>Level 15 Talent from +100 Cast Range to +125</li>
+                    <li>Level 15 Talent from +5 All Stats to -3s Frost Blast Cooldown</li>
+                    <li>Level 25 Talent from +25 Frost Armor Structure Armor to +35</li>
+                    <li>Level 15 Talent from +200 Health to +250</li>
+                    <li>Level 10 Talent from +20 Damage to -25s Respawn Time</li>
+                    <li>Level 10 Talent from +250 Mana to +60 Light Strike Array Damage</li>
+                    <li>Level 15 Talent from -30s Respawn Time to +40 Damage</li>
+                    <li>Level 10 Talent from 175 Health to -25s Respawn Time</li>
+                    <li>Level 15 Talent from -30s Respawn Time to +80 Earth Spike Damage</li>
+                    <li>Level 10 Talent from +200 Attack Range to +175</li>
+                    <li>Level 15 Talent from +65 Damage to +55</li>
+                    <li>Level 20 Talent from +7 Spirit Bear Armor to +12</li>
+                    <li>Level 20 Talent from -50s Respawn Time to -40s</li>
+                    <li>Base attack damage reduced by 6</li>
+                    <li>Lunar Blessing Night Vision bonus from 1000 to 250/500/750/1000</li>
+                    <li>Level 10 Talent from +4 Armor to +15 Movement Speed</li>
+                    <li>Added to CM</li>
+                    <li>Agility gain from 1.5 to 1.0</li>
+                    <li>Howl manacost from 30 to 40</li>
+                    <li>Level 15 Talent from -20s Respawn Time to -25s</li>
+                    <li>Level 15 Talent from +50 Damage to +12 Strength</li>
+                    <li>Level 20 Talent from +15 Strength to +15% Empower Damage/Cleave</li>
+                    <li>Level 20 Talent from +20 Movement to +40</li>
+                    <li>Level 10 Talent from +10 Intelligence to +12</li>
+                    <li>Level 15 Talent from 10% Evasion to 15%</li>
+                    <li>Level 20 Talent from +15 Agility to +1 Split Shot target</li>
+                    <li>Level 20 Talent from +500 Mana to +600</li>
+                    <li>Base armor reduced by 2</li>
+                    <li>Level 15 Talent from +20 Movement Speed to +25</li>
+                    <li>Level 20 Talent from +8 Armor to -4s Sacred Arrow cooldown</li>
+                    <li>Level 20 Talent from +40 Damage to +50 Damage</li>
+                    <li>Base armor reduced by 3</li>
+                    <li>Jingu Mastery bonus damage from 80/120/160/200 to 75/100/125/150</li>
+                    <li>Jingu Mastery lifesteal from 20/30/40/50% to 15/30/45/60%</li>
+                    <li>Wukong&#39;s Command no longer continues while reincarnating</li>
+                    <li>Level 15 Talent from +20 Movement Speed to +75 Jingu Mastery Damage</li>
+                    <li>Level 20 Talent from +15 Strength to 20% Magic Resistance</li>
+                    <li>Level 25 Talent from +25% Magic Resistance to +25 Strength</li>
+                    <li>Level 25 Talent from +30% Replicate Damage to +50%</li>
+                    <li>Level 15 Talent from 15% Evasion to -3s Ensnare Cooldown</li>
+                    <li>Level 10 Talent from +20 Damage to +30</li>
+                    <li>Level 10 Talent from +175 Health to +225 Health</li>
+                    <li>Level 20 Talent from +8 Armor to +10</li>
+                    <li>Agility gain from 1.7 to 1.2</li>
+                    <li>Movement speed from 290 to 285</li>
+                    <li>Level 15 Talent from +15 Movement Speed to +20</li>
+                    <li>Level 25 Talent from -6s Crippling Fear Cooldown to -8s</li>
+                    <li>Level 15 Talent from +10 Strength to +50 Impale Damage</li>
+                    <li>Level 15 Talent from +25 Agility to +12% Magic Resistance</li>
+                    <li>Level 20 Talent from +15% Magic Resistance to +40 Agility</li>
+                    <li>Intelligence growth from 2.4 to 2.0</li>
+                    <li>Level 15 Talent from +40 Damage to +50</li>
+                    <li>Level 10 Talent from +15% XP Gain to +20%</li>
+                    <li>Level 10 Talent from +15% XP Gain to +20%</li>
+                    <li>Level 20 Talent from +250 Health to +275 Health</li>
+                    <li>Level 15 Talent from +15 Movement Speed to +20</li>
+                    <li>Level 10 Talent from +150 Health to +75 Spirit Lance Damage</li>
+                    <li>Level 15 Talent from +12 Strength to +50 Fire Spirits DPS</li>
+                    <li>Level 10 Talent from +150 Health to +175</li>
+                    <li>Level 15 Talent from +20 Movement Speed to +15% Magic Resistance</li>
+                    <li>Level 20 Talent from +20% Magic Resistance to -3s Waning Rift Cooldown</li>
+                    <li>Level 20 Talent from +8% Spell Amplification to +10%</li>
+                    <li>Movement Speed reduced from 285 to 280</li>
+                    <li>Fixed Meat Hook sometimes landing the target behind your hero (requiring you to sometimes turn to dismember)</li>
+                    <li>Level 20 Talent from -35s Respawn Time to -40s</li>
+                    <li>Level 15 Talent from +10 Strength to +12</li>
+                    <li>Level 20 Talent from +10 All Stats to +0.5 Netherward Damage Per Mana</li>
+                    <li>Level 20 Talent from +100 Cast Range to +150</li>
+                    <li>Level 25 Talent from +100 Nether Blast Damage to +125</li>
+                    <li>Level 10 Talent from +5 Strength to +6</li>
+                    <li>Level 25 Talent from +35 Intelligence to -3s Shadow Strike Cooldown</li>
+                    <li>Level 15 Talent from +5 Armor to +130 Unstable Current Damage</li>
+                    <li>Level 20 Talent from +250 Health to +275</li>
+                    <li>Level 15 Talent from +20% XP Gain to +30%</li>
+                    <li>Level 10 Talent from +50 Damage to +60</li>
+                    <li>Level 10 Talent from +200 Mana to +10% Magic Resistance</li>
+                    <li>Level 15 Talent from +12% Magic Resistance to +50 Sand Storm DPS</li>
+                    <li>Level 15 Talent from +15 Movement Speed to -30s Respawn Time</li>
+                    <li>Disruption illusion damage taken from 200% to 300%</li>
+                    <li>Level 25 Talent from -1s Shadow Poison Cooldown to -6s Soul Catcher Cooldown</li>
+                    <li>Level 20 Talent from 15% Evasion to 15% Lifesteal</li>
+                    <li>Level 15 Talent from +20% XP Gain to 30%</li>
+                    <li>Level 25 Talent from +20% Curse Slow to +25%</li>
+                    <li>Level 15 Talent from +50 Damage to +75</li>
+                    <li>Level 15 Talent from +60 Gold/Min to +90</li>
+                    <li>Slithereen Crush stun duration from 1.6/1.9/2.2/2.5 to 1.5/1.75/2/2.25</li>
+                    <li>Level 15 Talent from +200 Health to +225</li>
+                    <li>Movement speed reduced from 305 to 300</li>
+                    <li>Level 15 Talent from +10 Strength to +15</li>
+                    <li>Level 20 Talent from +250 Health to +10% Cooldown Reduction</li>
+                    <li>Level 10 Talent from +4 Mana Regen to +5</li>
+                    <li>Level 20 Talent from +12 Strength to +15</li>
+                    <li>Level 10 Talent from +15 Movement Speed to +20</li>
+                    <li>Level 15 Talent from +175 Health to +200</li>
+                    <li>Level 20 Talent from +7 Armor to +8</li>
+                    <li>Level 25 Talent from -5s Storm Hammer Cooldown to -6s</li>
+                    <li>Proximity Mines bounty increased from 30 to 50</li>
+                    <li>Level 15 Talent from +25% XP Gain to +30%</li>
+                    <li>Level 25 Talent from +25% Cooldown Reduction to +20%</li>
+                    <li>Level 10 Talent from +15 Movement Speed to +20</li>
+                    <li>Level 20 Talent from +250 Health to +275</li>
+                    <li>Level 15 Talent from +175 Health to +200</li>
+                    <li>Level 20 Talent from +15 Movement Speed to +25</li>
+                    <li>Level 15 Talent from +30% XP Gain to +35%</li>
+                    <li>Level 25 Talent from -5 Gush Armor to -6</li>
+                    <li>Level 10 Talent from +10% XP Gain to +20%</li>
+                    <li>Level 15 Talent from +15 Intelligence to +20</li>
+                    <li>Level 20 Talent from +125 Cast Range to +150</li>
+                    <li>Level 10 Talent from +5 Armor to +6</li>
+                    <li>Level 15 Talent from +200 Health to +225 Health</li>
+                    <li>Level 10 Talent from +10 Intelligence to +12</li>
+                    <li>Level 15 Talent from +15 Movement Speed to +20</li>
+                    <li>Leech Seed slow from 28% to 22/24/26/28%</li>
+                    <li>Nature&#39;s Guise Bash duration from 0.7/1.2/1.7/2.2 to 0.4/1.0/1.6/2.2</li>
+                    <li>Nature&#39;s Guise movement bonus from 16/22/28/34% to 10/18/26/34%</li>
+                    <li>Level 20 Talent from +65 Damage to +90</li>
+                    <li>Level 10 Talent from +6 Strength to +7</li>
+                    <li>Level 20 Talent from +300 Health to +350</li>
+                    <li>Level 10 Talent from +20% XP Gain to +35%</li>
+                    <li>Level 10 Talent from +30 Damage to +35</li>
+                    <li>Level 15 Talent from +15 Strength to +150 Snowball Damage</li>
+                    <li>Level 20 Talent from +10% Magic Resistance to +12%</li>
+                    <li>Level 25 Talent from +500 Health to +700</li>
+                    <li>Movement speed reduced from 305 to 290</li>
+                    <li>Atrophy Aura Damage Reduction from 10/20/30/40% to 4/16/28/40%</li>
+                    <li>Level 15 Talent from +200 Health to +35 Movement Speed</li>
+                    <li>Level 20 Talent from +100 Cast Range to +125</li>
+                    <li>Level 20 Talent from +50 Attack Speed to +60</li>
+                    <li>Level 15 Talent from +30% XP Gain to +35%</li>
+                    <li>Level 20 Talent from +20 Movement Speed to +25</li>
+                    <li>Level 20 Talent from +10 All Stats to +50 Tombstone Zombie Damage</li>
+                    <li>Level 25 Talent from +40 Tombstone Zombie Damage to -2s Decay Cooldown</li>
+                    <li>Level 25 Talent from +12 Armor to +15</li>
+                    <li>Level 10 Talent from +8% Magic Resistance to +10%</li>
+                    <li>Level 20 Talent from +20 Movement Speed to +35</li>
+                    <li>Level 20 Talent from +50 Damage to +65</li>
+                    <li>Level 15 Talent from +175 Health to +200</li>
+                    <li>Level 10 Talent from +125 Health to +150</li>
+                    <li>Level 10 Talent from +15% XP Gain to +25%</li>
+                    <li>Level 10 Talent from +60 Gold/Min to +90</li>
+                    <li>Level 20 Talent from -30s Respawn Time to -40s</li>
+                    <li>Level 20 Talent from +250 Health to +300</li>
+                    <li>Level 10 Talent from +15% XP Gain to +20%</li>
+                    <li>Level 15 Talent from +20 Movement Speed to -4s Shadow Word Cooldown</li>
+                    <li>Level 15 Talent from +125 Cast Range to +150</li>
+                    <li>Base damage reduced by 2</li>
+                    <li>The Swarm damage from 20 to 14/16/18/20</li>
+                    <li>Level 25 Talent from +20% Magic Resistance to +25%</li>
+                    <li>Powershot damage from 120/220/320/420 to 180/260/340/420</li>
+                    <li>Powershot cooldown from 9 to 12/11/10/9</li>
+                    <li>Windrun slow AoE from 300 to 325</li>
+                    <li>Windrun manacost from 100 to 75</li>
+                    <li>Level 10 Talent from +15 Damage to +25% Windrun Slow</li>
+                    <li>Level 15 Talent from +16 Intelligence to +20 Intelligence</li>
+                    <li>Level 15 Talent from +200 Health to +40 Movement Speed</li>
+                    <li>Level 20 Talent from +12% Magic Resistance to +20%</li>
+                    <li>Level 20 Talent from +12% Spell Amplification to +15%</li>
+                    <li>Level 25 Talent from -5s Powershot Cooldown to -6s</li>
+                    <li>Level 10 Talent from +5 Strength to +6</li>
+                    <li>Level 10 Talent from +20% XP Gain to +25%</li>
+                    <li>Level 15 Talent from +75 Damage to +90</li>
+                    <li>Level 15 Talent from -35s Respawn Time to -40s</li>
+                    <li>Level 10 Talent from +8 Intelligence to +10</li>
+                    <li>Level 15 Talent from +200 Health to +50 Wraithfire Blast DPS</li>
+                    <li>Scepter strike interval from 2.5 to 2.25</li>
+                    <li>Scepter cooldown from 50 to 40 seconds</li>
+                    <li>Scepter duration from 50 to 40 seconds</li>
+                    <li>Level 10 Talent from +150 Health to +175</li>
+                </ul>
+            </figure>
+
+            <div id="Items">
+                <h3>Item Changes</h3>
+                <figure>
+                    <img data-id="bfury" src="http://cdn.dota2.com/apps/dota2/images/items/bfury_lg.png">
+                    <h1>Battle Fury:</h1>
+                    <ul>
+                            <li>Radius from 280 to 300</li>
+                            <li>Distance from 520 to 570</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="blade_mail" src="http://cdn.dota2.com/apps/dota2/images/items/blade_mail_lg.png">
+                    <h1>Blade Mail:</h1>
+                    <ul>
+                            <li>Damage return no longer spell lifesteals off of returned damage</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="bloodthorn" src="http://cdn.dota2.com/apps/dota2/images/items/bloodthorn_lg.png">
+                    <h1>Bloodthorn:</h1>
+                    <ul>
+                            <li>Cooldown from 11 to 13</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="dragon_lance" src="http://cdn.dota2.com/apps/dota2/images/items/dragon_lance_lg.png">
+                    <h1>Dragon Lance:</h1>
+                    <ul>
+                            <li>Agility from 14 to 13</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="flask" src="http://cdn.dota2.com/apps/dota2/images/items/flask_lg.png">
+                    <h1>Healing Salve:</h1>
+                    <ul>
+                            <li>Regen Rune now has the same damage dispel rules as Healing Salve</li>
+                            <li>Aegis expiration regen now has the same damage dispel rules as Healing Salve</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="heavens_halberd" src="http://cdn.dota2.com/apps/dota2/images/items/heavens_halberd_lg.png">
+                    <h1>Heaven&#39;s Halberd:</h1>
+                    <ul>
+                            <li>Maim chance from 24% to 35%</li>
+                            <li>Cooldown from 30 to 22</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="helm_of_the_dominator" src="http://cdn.dota2.com/apps/dota2/images/items/helm_of_the_dominator_lg.png">
+                    <h1>Helm of the Dominator:</h1>
+                    <ul>
+                            <li>All Stats from 6 to 4</li>
+                            <li>Creeps now give a constant 125 gold bounty</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="ward_observer" src="http://cdn.dota2.com/apps/dota2/images/items/ward_observer_lg.png">
+                    <h1>Observer Ward:</h1>
+                    <ul>
+                            <li>Now have a Fog of War simulator to show you the area the ward will reveal (taking into account trees and terrain height)</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="sange" src="http://cdn.dota2.com/apps/dota2/images/items/sange_lg.png">
+                    <h1>Sange:</h1>
+                    <ul>
+                            <li>Maim chance from 24% to 30%</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="sange_and_yasha" src="http://cdn.dota2.com/apps/dota2/images/items/sange_and_yasha_lg.png">
+                    <h1>Sange and Yasha:</h1>
+                    <ul>
+                            <li>Greater Maim chance from 30% to 35%</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="ward_sentry" src="http://cdn.dota2.com/apps/dota2/images/items/ward_sentry_lg.png">
+                    <h1>Sentry Ward:</h1>
+                    <ul>
+                            <li>Now come in packs of 1 for 100 gold (instead of 2 for 200)</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="silver_edge" src="http://cdn.dota2.com/apps/dota2/images/items/silver_edge_lg.png">
+                    <h1>Silver Edge:</h1>
+                    <ul>
+                            <li>Shadow Walk damage for Silver Edge from 225 to 200</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="solar_crest" src="http://cdn.dota2.com/apps/dota2/images/items/solar_crest_lg.png">
+                    <h1>Solar Crest:</h1>
+                    <ul>
+                            <li>Armor from 10 to 12 (same for transferring to Ally/Enemy)</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="tome_of_knowledge" src="http://cdn.dota2.com/apps/dota2/images/items/tome_of_knowledge_lg.png">
+                    <h1>Tome of Knowledge:</h1>
+                    <ul>
+                            <li>Additional XP per used Tome from 100 to 135</li>
+                    </ul>
+                </figure>
+            </div>
+
+            <div id="Heroes">
+                <h3>Hero Changes</h3>
+                <figure>
+                    <img data-id="abaddon" src="http://cdn.dota2.com/apps/dota2/images/items/abaddon_full.png">
+                    <h1>Abaddon:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="alchemist" src="http://cdn.dota2.com/apps/dota2/images/items/alchemist_full.png">
+                    <h1>Alchemist:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="ancient_apparition" src="http://cdn.dota2.com/apps/dota2/images/items/ancient_apparition_full.png">
+                    <h1>Ancient Apparition:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="antimage" src="http://cdn.dota2.com/apps/dota2/images/items/antimage_full.png">
+                    <h1>Anti-Mage:</h1>
+                    <ul>
+                            <li>Antimage:</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="arc_warden" src="http://cdn.dota2.com/apps/dota2/images/items/arc_warden_full.png">
+                    <h1>Arc Warden:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="axe" src="http://cdn.dota2.com/apps/dota2/images/items/axe_full.png">
+                    <h1>Axe:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="bane" src="http://cdn.dota2.com/apps/dota2/images/items/bane_full.png">
+                    <h1>Bane:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="batrider" src="http://cdn.dota2.com/apps/dota2/images/items/batrider_full.png">
+                    <h1>Batrider:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="beastmaster" src="http://cdn.dota2.com/apps/dota2/images/items/beastmaster_full.png">
+                    <h1>Beastmaster:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="bloodseeker" src="http://cdn.dota2.com/apps/dota2/images/items/bloodseeker_full.png">
+                    <h1>Bloodseeker:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="bounty_hunter" src="http://cdn.dota2.com/apps/dota2/images/items/bounty_hunter_full.png">
+                    <h1>Bounty Hunter:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="brewmaster" src="http://cdn.dota2.com/apps/dota2/images/items/brewmaster_full.png">
+                    <h1>Brewmaster:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="bristleback" src="http://cdn.dota2.com/apps/dota2/images/items/bristleback_full.png">
+                    <h1>Bristleback:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="broodmother" src="http://cdn.dota2.com/apps/dota2/images/items/broodmother_full.png">
+                    <h1>Broodmother:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="centaur" src="http://cdn.dota2.com/apps/dota2/images/items/centaur_full.png">
+                    <h1>Centaur Warrunner:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="chaos_knight" src="http://cdn.dota2.com/apps/dota2/images/items/chaos_knight_full.png">
+                    <h1>Chaos Knight:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="chen" src="http://cdn.dota2.com/apps/dota2/images/items/chen_full.png">
+                    <h1>Chen:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="clinkz" src="http://cdn.dota2.com/apps/dota2/images/items/clinkz_full.png">
+                    <h1>Clinkz:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="rattletrap" src="http://cdn.dota2.com/apps/dota2/images/items/rattletrap_full.png">
+                    <h1>Clockwerk:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="crystal_maiden" src="http://cdn.dota2.com/apps/dota2/images/items/crystal_maiden_full.png">
+                    <h1>Crystal Maiden:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="dark_seer" src="http://cdn.dota2.com/apps/dota2/images/items/dark_seer_full.png">
+                    <h1>Dark Seer:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="dazzle" src="http://cdn.dota2.com/apps/dota2/images/items/dazzle_full.png">
+                    <h1>Dazzle:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="death_prophet" src="http://cdn.dota2.com/apps/dota2/images/items/death_prophet_full.png">
+                    <h1>Death Prophet:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="disruptor" src="http://cdn.dota2.com/apps/dota2/images/items/disruptor_full.png">
+                    <h1>Disruptor:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="doom_bringer" src="http://cdn.dota2.com/apps/dota2/images/items/doom_bringer_full.png">
+                    <h1>Doom:</h1>
+                    <ul>
+                            <li>Level 20 Talent from +65 Damage to +35 Doom DPS</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="dragon_knight" src="http://cdn.dota2.com/apps/dota2/images/items/dragon_knight_full.png">
+                    <h1>Dragon Knight:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="drow_ranger" src="http://cdn.dota2.com/apps/dota2/images/items/drow_ranger_full.png">
+                    <h1>Drow Ranger:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="earth_spirit" src="http://cdn.dota2.com/apps/dota2/images/items/earth_spirit_full.png">
+                    <h1>Earth Spirit:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="earthshaker" src="http://cdn.dota2.com/apps/dota2/images/items/earthshaker_full.png">
+                    <h1>Earthshaker:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="elder_titan" src="http://cdn.dota2.com/apps/dota2/images/items/elder_titan_full.png">
+                    <h1>Elder Titan:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="ember_spirit" src="http://cdn.dota2.com/apps/dota2/images/items/ember_spirit_full.png">
+                    <h1>Ember Spirit:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="enchantress" src="http://cdn.dota2.com/apps/dota2/images/items/enchantress_full.png">
+                    <h1>Enchantress:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="enigma" src="http://cdn.dota2.com/apps/dota2/images/items/enigma_full.png">
+                    <h1>Enigma:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="faceless_void" src="http://cdn.dota2.com/apps/dota2/images/items/faceless_void_full.png">
+                    <h1>Faceless Void:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="gyrocopter" src="http://cdn.dota2.com/apps/dota2/images/items/gyrocopter_full.png">
+                    <h1>Gyrocopter:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="huskar" src="http://cdn.dota2.com/apps/dota2/images/items/huskar_full.png">
+                    <h1>Huskar:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="invoker" src="http://cdn.dota2.com/apps/dota2/images/items/invoker_full.png">
+                    <h1>Invoker:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="wisp" src="http://cdn.dota2.com/apps/dota2/images/items/wisp_full.png">
+                    <h1>Io:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="jakiro" src="http://cdn.dota2.com/apps/dota2/images/items/jakiro_full.png">
+                    <h1>Jakiro:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="juggernaut" src="http://cdn.dota2.com/apps/dota2/images/items/juggernaut_full.png">
+                    <h1>Juggernaut:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="keeper_of_the_light" src="http://cdn.dota2.com/apps/dota2/images/items/keeper_of_the_light_full.png">
+                    <h1>Keeper of the Light:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="kunkka" src="http://cdn.dota2.com/apps/dota2/images/items/kunkka_full.png">
+                    <h1>Kunkka:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="legion_commander" src="http://cdn.dota2.com/apps/dota2/images/items/legion_commander_full.png">
+                    <h1>Legion Commander:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="leshrac" src="http://cdn.dota2.com/apps/dota2/images/items/leshrac_full.png">
+                    <h1>Leshrac:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="lich" src="http://cdn.dota2.com/apps/dota2/images/items/lich_full.png">
+                    <h1>Lich:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="life_stealer" src="http://cdn.dota2.com/apps/dota2/images/items/life_stealer_full.png">
+                    <h1>Lifestealer:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="lina" src="http://cdn.dota2.com/apps/dota2/images/items/lina_full.png">
+                    <h1>Lina:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="lion" src="http://cdn.dota2.com/apps/dota2/images/items/lion_full.png">
+                    <h1>Lion:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="lone_druid" src="http://cdn.dota2.com/apps/dota2/images/items/lone_druid_full.png">
+                    <h1>Lone Druid:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="luna" src="http://cdn.dota2.com/apps/dota2/images/items/luna_full.png">
+                    <h1>Luna:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="lycan" src="http://cdn.dota2.com/apps/dota2/images/items/lycan_full.png">
+                    <h1>Lycan:</h1>
+                    <ul>
+                            <li>Added Lycan to CM</li>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="magnataur" src="http://cdn.dota2.com/apps/dota2/images/items/magnataur_full.png">
+                    <h1>Magnus:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="medusa" src="http://cdn.dota2.com/apps/dota2/images/items/medusa_full.png">
+                    <h1>Medusa:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="meepo" src="http://cdn.dota2.com/apps/dota2/images/items/meepo_full.png">
+                    <h1>Meepo:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="mirana" src="http://cdn.dota2.com/apps/dota2/images/items/mirana_full.png">
+                    <h1>Mirana:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="monkey_king" src="http://cdn.dota2.com/apps/dota2/images/items/monkey_king_full.png">
+                    <h1>Monkey King:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="morphling" src="http://cdn.dota2.com/apps/dota2/images/items/morphling_full.png">
+                    <h1>Morphling:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="naga_siren" src="http://cdn.dota2.com/apps/dota2/images/items/naga_siren_full.png">
+                    <h1>Naga Siren:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="furion" src="http://cdn.dota2.com/apps/dota2/images/items/furion_full.png">
+                    <h1>Nature&#39;s Prophet:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="necrolyte" src="http://cdn.dota2.com/apps/dota2/images/items/necrolyte_full.png">
+                    <h1>Necrophos:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="night_stalker" src="http://cdn.dota2.com/apps/dota2/images/items/night_stalker_full.png">
+                    <h1>Night Stalker:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="nyx_assassin" src="http://cdn.dota2.com/apps/dota2/images/items/nyx_assassin_full.png">
+                    <h1>Nyx Assassin:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="ogre_magi" src="http://cdn.dota2.com/apps/dota2/images/items/ogre_magi_full.png">
+                    <h1>Ogre Magi:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="omniknight" src="http://cdn.dota2.com/apps/dota2/images/items/omniknight_full.png">
+                    <h1>Omniknight:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="oracle" src="http://cdn.dota2.com/apps/dota2/images/items/oracle_full.png">
+                    <h1>Oracle:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="obsidian_destroyer" src="http://cdn.dota2.com/apps/dota2/images/items/obsidian_destroyer_full.png">
+                    <h1>Outworld Devourer:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="phantom_assassin" src="http://cdn.dota2.com/apps/dota2/images/items/phantom_assassin_full.png">
+                    <h1>Phantom Assassin:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="phantom_lancer" src="http://cdn.dota2.com/apps/dota2/images/items/phantom_lancer_full.png">
+                    <h1>Phantom Lancer:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="phoenix" src="http://cdn.dota2.com/apps/dota2/images/items/phoenix_full.png">
+                    <h1>Phoenix:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="puck" src="http://cdn.dota2.com/apps/dota2/images/items/puck_full.png">
+                    <h1>Puck:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="pudge" src="http://cdn.dota2.com/apps/dota2/images/items/pudge_full.png">
+                    <h1>Pudge:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="pugna" src="http://cdn.dota2.com/apps/dota2/images/items/pugna_full.png">
+                    <h1>Pugna:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="queenofpain" src="http://cdn.dota2.com/apps/dota2/images/items/queenofpain_full.png">
+                    <h1>Queen of Pain:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="razor" src="http://cdn.dota2.com/apps/dota2/images/items/razor_full.png">
+                    <h1>Razor:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="riki" src="http://cdn.dota2.com/apps/dota2/images/items/riki_full.png">
+                    <h1>Riki:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="rubick" src="http://cdn.dota2.com/apps/dota2/images/items/rubick_full.png">
+                    <h1>Rubick:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="sand_king" src="http://cdn.dota2.com/apps/dota2/images/items/sand_king_full.png">
+                    <h1>Sand King:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="shadow_demon" src="http://cdn.dota2.com/apps/dota2/images/items/shadow_demon_full.png">
+                    <h1>Shadow Demon:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="nevermore" src="http://cdn.dota2.com/apps/dota2/images/items/nevermore_full.png">
+                    <h1>Shadow Fiend:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="shadow_shaman" src="http://cdn.dota2.com/apps/dota2/images/items/shadow_shaman_full.png">
+                    <h1>Shadow Shaman:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="silencer" src="http://cdn.dota2.com/apps/dota2/images/items/silencer_full.png">
+                    <h1>Silencer:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="skywrath_mage" src="http://cdn.dota2.com/apps/dota2/images/items/skywrath_mage_full.png">
+                    <h1>Skywrath Mage:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="slardar" src="http://cdn.dota2.com/apps/dota2/images/items/slardar_full.png">
+                    <h1>Slardar:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="slark" src="http://cdn.dota2.com/apps/dota2/images/items/slark_full.png">
+                    <h1>Slark:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="sniper" src="http://cdn.dota2.com/apps/dota2/images/items/sniper_full.png">
+                    <h1>Sniper:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="spectre" src="http://cdn.dota2.com/apps/dota2/images/items/spectre_full.png">
+                    <h1>Spectre:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="spirit_breaker" src="http://cdn.dota2.com/apps/dota2/images/items/spirit_breaker_full.png">
+                    <h1>Spirit Breaker:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="storm_spirit" src="http://cdn.dota2.com/apps/dota2/images/items/storm_spirit_full.png">
+                    <h1>Storm Spirit:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="sven" src="http://cdn.dota2.com/apps/dota2/images/items/sven_full.png">
+                    <h1>Sven:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="techies" src="http://cdn.dota2.com/apps/dota2/images/items/techies_full.png">
+                    <h1>Techies:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="templar_assassin" src="http://cdn.dota2.com/apps/dota2/images/items/templar_assassin_full.png">
+                    <h1>Templar Assassin:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="terrorblade" src="http://cdn.dota2.com/apps/dota2/images/items/terrorblade_full.png">
+                    <h1>Terrorblade:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="tidehunter" src="http://cdn.dota2.com/apps/dota2/images/items/tidehunter_full.png">
+                    <h1>Tidehunter:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="shredder" src="http://cdn.dota2.com/apps/dota2/images/items/shredder_full.png">
+                    <h1>Timbersaw:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="tinker" src="http://cdn.dota2.com/apps/dota2/images/items/tinker_full.png">
+                    <h1>Tinker:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="tiny" src="http://cdn.dota2.com/apps/dota2/images/items/tiny_full.png">
+                    <h1>Tiny:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="treant" src="http://cdn.dota2.com/apps/dota2/images/items/treant_full.png">
+                    <h1>Treant Protector:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="troll_warlord" src="http://cdn.dota2.com/apps/dota2/images/items/troll_warlord_full.png">
+                    <h1>Troll Warlord:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="tusk" src="http://cdn.dota2.com/apps/dota2/images/items/tusk_full.png">
+                    <h1>Tusk:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="abyssal_underlord" src="http://cdn.dota2.com/apps/dota2/images/items/abyssal_underlord_full.png">
+                    <h1>Underlord:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="undying" src="http://cdn.dota2.com/apps/dota2/images/items/undying_full.png">
+                    <h1>Undying:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="ursa" src="http://cdn.dota2.com/apps/dota2/images/items/ursa_full.png">
+                    <h1>Ursa:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="vengefulspirit" src="http://cdn.dota2.com/apps/dota2/images/items/vengefulspirit_full.png">
+                    <h1>Vengeful Spirit:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="venomancer" src="http://cdn.dota2.com/apps/dota2/images/items/venomancer_full.png">
+                    <h1>Venomancer:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="viper" src="http://cdn.dota2.com/apps/dota2/images/items/viper_full.png">
+                    <h1>Viper:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="visage" src="http://cdn.dota2.com/apps/dota2/images/items/visage_full.png">
+                    <h1>Visage:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="warlock" src="http://cdn.dota2.com/apps/dota2/images/items/warlock_full.png">
+                    <h1>Warlock:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="weaver" src="http://cdn.dota2.com/apps/dota2/images/items/weaver_full.png">
+                    <h1>Weaver:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="windrunner" src="http://cdn.dota2.com/apps/dota2/images/items/windrunner_full.png">
+                    <h1>Windranger:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="winter_wyvern" src="http://cdn.dota2.com/apps/dota2/images/items/winter_wyvern_full.png">
+                    <h1>Winter Wyvern:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="witch_doctor" src="http://cdn.dota2.com/apps/dota2/images/items/witch_doctor_full.png">
+                    <h1>Witch Doctor:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="skeleton_king" src="http://cdn.dota2.com/apps/dota2/images/items/skeleton_king_full.png">
+                    <h1>Wraith King:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+                <figure>
+                    <img data-id="zuus" src="http://cdn.dota2.com/apps/dota2/images/items/zuus_full.png">
+                    <h1>Zeus:</h1>
+                    <ul>
+                    </ul>
+                </figure>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
