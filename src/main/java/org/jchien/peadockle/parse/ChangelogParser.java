@@ -14,6 +14,8 @@ import java.util.stream.Collectors;
  * @author jchien
  */
 public class ChangelogParser {
+    private VersionParser versionParser = new VersionParser();
+    private StopPhrases stopPhrases = new StopPhrases();
     private DotaDictionary heroDict;
     private DotaDictionary itemDict;
 
@@ -41,31 +43,41 @@ public class ChangelogParser {
         List<String> generalChanges = new ArrayList<>();
         Map<Integer, List<String>> itemChangeMap = new HashMap<>();
         Map<Integer, List<String>> heroChangeMap = new HashMap<>();
+        String version = null;
+
 
         try (BufferedReader in = new BufferedReader(new FileReader(patchPath))) {
             String line;
             while ((line = in.readLine()) != null) {
-                Set<Integer> heroIds = heroDict.parseEntryIds(line);
-                Set<Integer> itemIds = itemDict.parseEntryIds(line);
-
-                /*if (heroIds.size() > 1) {
-                    System.out.println(line + "\n\theroes: " + heroIds);
+                boolean isVersionLine = false;
+                if (version == null) {
+                    // find no more than one version
+                    String lineVersion = versionParser.parseVersion(line);
+                    if (lineVersion != null) {
+                        version = lineVersion;
+                        isVersionLine = true;
+                    }
                 }
 
-                if (itemIds.size() > 1) {
-                    System.out.println(line + "\n\titems:" + heroIds);
-                }*/
+                if (!isVersionLine) {
+                    Set<Integer> heroIds = heroDict.parseEntryIds(line);
+                    Set<Integer> itemIds = itemDict.parseEntryIds(line);
 
-                if (!heroIds.isEmpty()) {
-                    int heroId = heroIds.stream().findFirst().get();
-                    getOrCreateChangeList(heroChangeMap, heroId).add(line);
-                } else if (!itemIds.isEmpty()) {
-                    int itemId = itemIds.stream().findFirst().get();
-                    getOrCreateChangeList(itemChangeMap, itemId).add(line);
-                } else {
-                    // todo interpret general changes in groups based on double newlines
-                    // todo better empty line detection
-                    if (!line.isEmpty()) {
+                    /*if (heroIds.size() > 1) {
+                        System.out.println(line + "\n\theroes: " + heroIds);
+                    }
+
+                    if (itemIds.size() > 1) {
+                        System.out.println(line + "\n\titems:" + heroIds);
+                    }*/
+
+                    if (!heroIds.isEmpty()) {
+                        int heroId = heroIds.stream().findFirst().get();
+                        getOrCreateChangeList(heroChangeMap, heroId).add(line);
+                    } else if (!itemIds.isEmpty()) {
+                        int itemId = itemIds.stream().findFirst().get();
+                        getOrCreateChangeList(itemChangeMap, itemId).add(line);
+                    } else if (stopPhrases.allowed(line)) {
                         generalChanges.add(line);
                     }
                 }
@@ -77,7 +89,7 @@ public class ChangelogParser {
         System.out.println(heroChangeMap);
 
         // todo actually parse the patch number
-        return buildChangelog("7.xx", generalChanges, itemChangeMap, heroChangeMap);
+        return buildChangelog(version, generalChanges, itemChangeMap, heroChangeMap);
     }
 
     private Changelog buildChangelog(String patchNumber,

@@ -51,7 +51,7 @@ public class DotaDictionary {
     public Set<Integer> parseEntryIds(String line) {
         List<Integer> ids = Lists.newArrayList();
 
-        String fmtLine = format(line);
+        String fmtLine = InputFormatter.format(line);
         int start = 0;
         while (start < fmtLine.length()) {
             String substr = fmtLine.substring(start);
@@ -89,22 +89,6 @@ public class DotaDictionary {
         return -(idx + 1);
     }
 
-    private static String format(String s) {
-        StringBuilder sb = new StringBuilder(s.length());
-        // assume everything is ascii
-        for (int i=0; i < s.length(); i++) {
-            char ch = s.charAt(i);
-            if (Character.isAlphabetic(ch)) {
-                sb.append(Character.toLowerCase(ch));
-            } else if (Character.isWhitespace(ch)) {
-                sb.append(' ');
-            } else if (Character.isDigit(ch)) {
-                sb.append(ch);
-            }
-            // ignore everything else, this includes +-:/.,
-        }
-        return sb.toString();
-    }
 
     private Set<Integer> dedupeSny(List<Integer> ids) {
         Set<Integer> ret = new LinkedHashSet<>(ids);
@@ -142,11 +126,12 @@ public class DotaDictionary {
         List<FormattedEntry> fmtEntries = Lists.newArrayListWithCapacity(entries.length);
         for (Entry entry : entries) {
             map.put(entry.getId(), entry);
-
-            fmtEntries.add(new FormattedEntry(entry.getId(), format(entry.getLocalizedName())));
+            String fmtLocalName = InputFormatter.format(entry.getLocalizedName());
+            fmtEntries.add(new FormattedEntry(entry.getId(), fmtLocalName));
             if (entry.getAlternateNames() != null) {
                 for (String altName : entry.getAlternateNames()) {
-                    fmtEntries.add(new FormattedEntry(entry.getId(), format(altName)));
+                    String fmtAltName = InputFormatter.format(altName);
+                    fmtEntries.add(new FormattedEntry(entry.getId(), fmtAltName));
                 }
             }
         }
