@@ -85,7 +85,7 @@
             font-size: 18px;
             line-height: 30px;
             display: block;
-            width: 949px;
+            width: auto;
             background-color: #080808;
             padding: 22px 50px 2px 50px;
             margin: 0px 0px 2px 0px;
