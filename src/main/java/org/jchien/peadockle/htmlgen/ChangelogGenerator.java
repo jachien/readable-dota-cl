@@ -29,8 +29,8 @@ public class ChangelogGenerator {
         Map<String, Object> input = new HashMap<>();
         input.put("changelog", changelog);
 
-        Writer consoleWriter = new OutputStreamWriter(System.out);
-        template.process(input, consoleWriter);
+        /*Writer consoleWriter = new OutputStreamWriter(System.out);
+        template.process(input, consoleWriter);*/
 
         Writer fileWriter = new FileWriter(new File(outputFile));
         try {

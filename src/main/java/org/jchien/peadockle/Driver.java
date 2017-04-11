@@ -28,6 +28,7 @@ public class Driver {
         };
 
         for (String patch : patches) {
+            System.out.println("processing patch " + patch);
             Changelog changelog = clp.generateChangelog("src/resources/" + patch + "_valve.txt", new DefaultChangeListFormatter());
             gen.generateChangelogHtml(changelog, "E:\\jchien\\code\\readable-dota-cl\\changelog_" + patch + ".html");
         }
