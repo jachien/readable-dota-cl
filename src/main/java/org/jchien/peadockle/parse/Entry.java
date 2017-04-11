@@ -1,5 +1,7 @@
 package org.jchien.peadockle.parse;
 
+import com.google.common.annotations.VisibleForTesting;
+
 import java.util.Arrays;
 
 /**
@@ -12,7 +14,18 @@ public class Entry {
     private String localizedName;
     private String[] alternateNames;
 
+    /**
+     * This class is intended to be populated from json by gson, so there is no public constructor.
+     */
     private Entry() {
+    }
+
+    @VisibleForTesting
+    Entry(int id, String name, String localizedName, String[] alternateNames) {
+        this.id = id;
+        this.name = name;
+        this.localizedName = localizedName;
+        this.alternateNames = alternateNames;
     }
 
     public int getId() {

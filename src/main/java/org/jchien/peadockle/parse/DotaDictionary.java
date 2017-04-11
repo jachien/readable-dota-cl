@@ -1,5 +1,6 @@
 package org.jchien.peadockle.parse;
 
+import com.google.common.annotations.VisibleForTesting;
 import com.google.common.collect.Lists;
 import com.google.common.collect.Maps;
 import com.google.gson.FieldNamingPolicy;
@@ -30,6 +31,13 @@ public class DotaDictionary {
     private int[] ids;
     private Map<Integer, Entry> map;
 
+    /**
+     * Use {@link #load(String)} to create an DotaDictionary instance.
+     *
+     * @param strings
+     * @param ids
+     * @param map
+     */
     private DotaDictionary(String[] strings, int[] ids, Map<Integer, Entry> map) {
         this.strings = strings;
         this.ids = ids;
@@ -120,9 +128,15 @@ public class DotaDictionary {
         return ret;
     }
 
+
+
     public static DotaDictionary load(String path) throws FileNotFoundException {
         Entry[] entries = GSON.fromJson(new FileReader(path), Entry[].class);
+        return load(entries);
+    }
 
+    @VisibleForTesting
+    static DotaDictionary load(Entry[] entries) {
         Map<Integer, Entry> map = Maps.newHashMap();
         List<FormattedEntry> fmtEntries = Lists.newArrayListWithCapacity(entries.length);
         for (Entry entry : entries) {
