@@ -31,7 +31,7 @@
 
         .inner {
             width: 947px;
-            max-width: 90%
+            max-width: 90%;
         }
 
         .inner h2 {
