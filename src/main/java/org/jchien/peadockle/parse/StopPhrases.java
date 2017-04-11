@@ -19,7 +19,10 @@ public class StopPhrases {
             .add("hero changes")
             .build();
 
-
+    /**
+     * @param line
+     * @return      true if phrase is not blacklisted, false if phrase is blacklisted
+     */
     public boolean allowed(String line) {
         String fmtLine = InputFormatter.format(line);
         if (PHRASES.contains(fmtLine)) {
