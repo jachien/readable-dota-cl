@@ -98,7 +98,9 @@ public class ChangelogParser {
                                      Map<Integer, List<String>> heroChangeMap) {
 
         List<ChangeList> gcl = new ArrayList<>();
-        gcl.add(new ChangeList(null, null, null, null, generalChanges));
+        if (!generalChanges.isEmpty()) {
+            gcl.add(new ChangeList(null, null, null, null, generalChanges));
+        }
 
         List<ChangeList> icl = buildChangeList(itemChangeMap, itemDict);
         List<ChangeList> hcl = buildChangeList(heroChangeMap, heroDict);
