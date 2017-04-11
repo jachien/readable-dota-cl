@@ -89,6 +89,7 @@
             background-color: #080808;
             padding: 22px 50px 2px 50px;
             margin: 0px 0px 2px 0px;
+            background-color: rgba( 0, 0, 0, 0.5 );
         }
 
         ul {
