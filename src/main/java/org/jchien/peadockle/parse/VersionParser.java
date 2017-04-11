@@ -7,7 +7,7 @@ import java.util.regex.Pattern;
  * @author jchien
  */
 public class VersionParser {
-    private final static Pattern VERSION_STRING_PATTERN = Pattern.compile("[*-=\\s]*(\\d\\.\\d\\d[a-z]?)[:]?[*-=\\s]*");
+    private final static Pattern VERSION_STRING_PATTERN = Pattern.compile("[*-=#\\s]*(\\d\\.\\d\\d[a-z]?)[:]?[*-=#\\s]*");
 
     /**
      * @param line  line from changelog
