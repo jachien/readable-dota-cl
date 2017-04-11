@@ -147,7 +147,7 @@
                 <h4>${cl.localizedName?html}:</h4>
                 <ul>
                     <#list cl.changes as change>
-                        <li>${change?html}</li>
+                    <li>${change?html}</li>
                     </#list>
                 </ul>
             </figure>
@@ -164,7 +164,7 @@
                 <h4>${cl.localizedName?html}:</h4>
                 <ul>
                     <#list cl.changes as change>
-                        <li>${change?html}</li>
+                    <li>${change?html}</li>
                     </#list>
                 </ul>
             </figure>
