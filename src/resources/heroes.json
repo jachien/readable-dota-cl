@@ -2,7 +2,8 @@
     {
         "name":"antimage",
         "id":1,
-        "localized_name":"Anti-Mage"
+        "localized_name":"Anti-Mage",
+        "alternate_names":["Antimage"]
     },
     {
         "name":"axe",
