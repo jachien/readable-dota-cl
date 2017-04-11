@@ -65,6 +65,7 @@ public class DotaDictionary {
                     if (idx >= 0 && fmtLine.startsWith(strings[idx], start)) {
                         int end = start + strings[idx].length();
                         // string must end on a word boundary to avoid matching cases like "Io" in "Ion shell"
+                        // maybe it should look for a non-alphanumeric char instead of end of line or whitespace
                         if (end >= fmtLine.length() || Character.isWhitespace(fmtLine.charAt(end))) {
                             int id = this.ids[idx];
                             ids.add(id);
