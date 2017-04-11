@@ -60,6 +60,7 @@
     <div class="Inner">
         <h2>${changelog.patchNumber?html} Gameplay Update</h2>
         <div id="General">
+            <#if changelog.generalChanges?has_content>
             <h3>General Changes</h3>
             <figure>
                 <#list changelog.generalChanges as cl>
@@ -70,8 +71,10 @@
                 </ul>
                 </#list>
             </figure>
+            </#if>
 
             <div id="Items">
+                <#if changelog.itemChanges?has_content>
                 <h3>Item Changes</h3>
                 <#list changelog.itemChanges as cl>
                 <figure>
@@ -84,9 +87,11 @@
                     </ul>
                 </figure>
                 </#list>
+                </#if>
             </div>
 
             <div id="Heroes">
+                <#if changelog.heroChanges?has_content>
                 <h3>Hero Changes</h3>
                 <#list changelog.heroChanges as cl>
                 <figure>
@@ -99,6 +104,7 @@
                     </ul>
                 </figure>
                 </#list>
+                </#if>
             </div>
         </div>
     </div>
